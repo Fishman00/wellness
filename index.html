@@ -3,842 +3,944 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KONGWO情绪管理 × 疗愈文旅合作赋能系统</title>
-    <!-- Tailwind CSS -->
+    <title>KONGWO 情绪管理·疗愈文旅顶层战略合作全案</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts for premium serif headings -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background-color: #FBFBF9; /* Warm stone beige */
-            scroll-behavior: smooth;
-        }
-        .serif-title {
-            font-family: 'Noto Serif SC', serif;
-        }
-        /* Custom scrollbar */
-        ::-webkit-scrollbar { width: 6px; height: 6px; }
-        ::-webkit-scrollbar-track { background: #F3F4F1; }
-        ::-webkit-scrollbar-thumb { background: #D1D5DB; border-radius: 3px; }
-        ::-webkit-scrollbar-thumb:hover { background: #064E3B; }
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+        .font-serif-sc { font-family: 'Noto Serif SC', serif; }
+        .font-sans-custom { font-family: 'Plus Jakarta Sans', sans-serif; }
         
-        /* Subtle image overlay for readability */
-        .img-overlay::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to top, rgba(28, 25, 23, 0.6) 0%, rgba(28, 25, 23, 0) 50%);
-            pointer-events: none;
-        }
+        /* Premium Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 3px; }
     </style>
 </head>
-<body class="text-slate-800 antialiased selection:bg-emerald-950 selection:text-white">
-
-    <!-- Header Navigation -->
-    <header class="sticky top-0 z-40 backdrop-blur-md bg-[#FBFBF9]/90 border-b border-stone-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <svg class="w-8 h-8 text-emerald-900" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M50 15C50 15 32 45 32 60C32 72.15 40.06 82 50 82C59.94 82 68 72.15 68 60C68 45 50 15 50 15Z" fill="currentColor" fill-opacity="0.15"/>
-                    <path d="M50 25C50 25 38 48 38 60C38 67.73 43.37 74 50 74C56.63 74 62 67.73 62 60C62 48 50 25 50 25Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-                </svg>
-                <div>
-                    <span class="text-xl font-bold tracking-widest text-emerald-950 block">KONGWO 空无</span>
-                    <span class="text-[10px] tracking-wider text-stone-500 uppercase block -mt-1">Systematic Healing</span>
-                </div>
-            </div>
-            <div class="hidden lg:flex items-center space-x-8 text-sm font-medium text-stone-600">
-                <a href="#endorsement" class="hover:text-emerald-900 transition-colors">权威背书</a>
-                <a href="#models" class="hover:text-emerald-900 transition-colors">合作模式</a>
-                <a href="#cases" class="hover:text-emerald-900 transition-colors">标杆案例</a>
-                <a href="#training" class="hover:text-emerald-900 transition-colors">企服培训</a>
-            </div>
-            <div>
-                <a href="#contact-form" class="inline-flex items-center justify-center px-5 py-2.5 text-xs font-semibold tracking-wider text-white uppercase bg-emerald-900 rounded-full hover:bg-emerald-950 transition-all shadow-md hover:shadow-lg">
-                    预约方案咨询
-                </a>
-            </div>
-        </div>
-    </header>
+<body class="bg-[#0b0f19] text-[#e2e8f0] font-sans-custom antialiased selection:bg-indigo-500 selection:text-white">
 
     <!-- Hero Section -->
-    <section class="relative overflow-hidden pt-16 pb-20 lg:pt-24 lg:pb-28 border-b border-stone-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div>
-                    <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200 mb-6">
-                        <span class="w-1.5 h-1.5 rounded-full bg-amber-500 mr-2 animate-pulse"></span>
-                        情绪经济时代的文旅破局者
-                    </div>
-                    <h1 class="serif-title text-4xl sm:text-5xl lg:text-6xl font-bold text-stone-900 leading-tight">
-                        为高端空间植入<br/>
-                        <span class="text-emerald-850 italic">「疗愈心流」</span>的商业引擎
-                    </h1>
-                    <p class="mt-6 text-base sm:text-lg text-stone-600 leading-relaxed">
-                        KONGWO 空无，国内领先的系统化情绪管理运营商。我们依托世界级权威背书，将脑神经科学与东方正念疗愈深度结合，为高星级度假酒店、文旅古村与大健康机构提供**流量变现、客单跃升与空间重塑**的整体解决方案。
-                    </p>
-                    <div class="mt-8 flex items-center space-x-6">
-                        <a href="#contact-form" class="px-6 py-3 bg-stone-900 text-white rounded-full text-sm font-semibold hover:bg-stone-800 transition-all shadow-lg hover:shadow-xl">
-                            获取定制化合作方案
-                        </a>
-                        <a href="#cases" class="text-sm font-semibold text-emerald-900 hover:text-emerald-700 transition-all flex items-center">
-                            探索实战案例
-                            <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-2xl ring-1 ring-stone-900/5 group">
-                    <img src="https://images.unsplash.com/photo-1545389336-cf090694435e?q=80&w=1000&auto=format&fit=crop" alt="" class="aspect-[4/3] w-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-in-out">
-                    <!-- Overlay Floating Card -->
-                    <div class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md p-4 rounded-2xl border border-stone-100 shadow-lg">
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <p class="text-xs text-stone-500 font-bold uppercase tracking-wider">实时脑波反馈 (EEG)</p>
-                                <p class="text-sm font-bold text-emerald-900 mt-0.5">前额叶 α 波活跃度 +42%</p>
-                            </div>
-                            <div class="h-8 w-8 rounded-full bg-emerald-50 flex items-center justify-center">
-                                <svg class="w-4 h-4 text-emerald-700 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="relative overflow-hidden bg-gradient-to-b from-[#0f172a] via-[#090d16] to-[#0b0f19] border-b border-slate-800/80">
+        <!-- Floating Ambient Glows -->
+        <div class="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-indigo-900/10 blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-[20%] right-[-10%] w-[40vw] h-[40vw] rounded-full bg-blue-900/10 blur-[120px] pointer-events-none"></div>
 
-    <!-- Authority & Endorsement Section -->
-    <section id="endorsement" class="py-16 bg-white border-b border-stone-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-10">
-                <h2 class="serif-title text-2xl sm:text-3xl font-bold text-stone-900">国际级标准与临床级学术双重护航</h2>
-                <p class="mt-3 text-sm text-stone-500">拒绝表演型“玄学”，交付基于医学数据与行业规范的绝对信任</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="p-6 rounded-2xl bg-[#FBFBF9] border border-stone-200 text-center flex flex-col items-center hover:shadow-md transition-shadow">
-                    <div class="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center mb-4 border border-blue-100">
-                        <span class="text-blue-800 font-bold text-xl">UN</span>
-                    </div>
-                    <h3 class="font-bold text-stone-900 text-base mb-2">联合国 UNIHEAL 官方背书</h3>
-                    <p class="text-xs text-stone-600 leading-relaxed">作为联合国 SDGS 国际疗愈会员机构，KONGWO 的疗愈体系全面对接全球大健康与可持续发展最高标准，为高端跨界赋能提供顶层品牌势能。</p>
+        <div class="max-w-7xl mx-auto px-6 pt-20 pb-16 relative z-10">
+            <div class="flex items-center justify-between mb-8">
+                <div class="flex items-center gap-3">
+                    <span class="text-xs tracking-[0.25em] text-indigo-400 font-bold uppercase border border-indigo-500/30 px-3 py-1 rounded bg-indigo-950/40">KONGWO 空无</span>
+                    <span class="text-xs text-slate-500">•</span>
+                    <span class="text-xs text-slate-400 font-semibold tracking-wider">UNITAR CIFAL SHANGHAI / UNIHEAL 联合授予示范基地全案</span>
                 </div>
-                <div class="p-6 rounded-2xl bg-[#FBFBF9] border border-stone-200 text-center flex flex-col items-center hover:shadow-md transition-shadow">
-                    <div class="w-16 h-16 rounded-full bg-emerald-50 flex items-center justify-center mb-4 border border-emerald-100">
-                        <svg class="w-8 h-8 text-emerald-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-                    </div>
-                    <h3 class="font-bold text-stone-900 text-base mb-2">省级研究会权威发起单位</h3>
-                    <p class="text-xs text-stone-600 leading-relaxed">发起并成立浙江省社区研究会旗下的“疗愈文化学组”，成为国内首个情绪疗愈专业行业组织的制定者与先行者。</p>
-                </div>
-                <div class="p-6 rounded-2xl bg-[#FBFBF9] border border-stone-200 text-center flex flex-col items-center hover:shadow-md transition-shadow">
-                    <div class="w-16 h-16 rounded-full bg-rose-50 flex items-center justify-center mb-4 border border-rose-100">
-                        <svg class="w-8 h-8 text-rose-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-                    </div>
-                    <h3 class="font-bold text-stone-900 text-base mb-2">临床医疗与脑科学联合研发</h3>
-                    <p class="text-xs text-stone-600 leading-relaxed">联手红会医院等精神专科提供临床支持，引入OxyZen脑电(EEG)及心率(HRV)多维监测设备，实现疗愈效果的精准数据化可视。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Partnership Models -->
-    <section id="models" class="py-20 bg-stone-950 text-stone-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
-                <div class="max-w-2xl">
-                    <span class="text-emerald-400 text-xs font-bold uppercase tracking-widest block mb-2">Business Models</span>
-                    <h2 class="serif-title text-3xl sm:text-4xl font-bold text-white">KONGWO 四大商业赋能模式</h2>
-                    <p class="mt-4 text-stone-400 text-sm">针对不同资产性质与空间特征，提供从“轻量级内容植入”到“全盘运营托管”的阶梯式生态合作方案。</p>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Model 1 -->
-                <div class="bg-stone-900 rounded-3xl p-6 border border-stone-800 hover:border-emerald-500/50 transition-all group overflow-hidden">
-                    <div class="h-32 w-full rounded-2xl mb-6 overflow-hidden relative img-overlay">
-                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=600&auto=format&fit=crop" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">1. 空间赋能与内容植入</h3>
-                    <p class="text-xs text-stone-400 leading-relaxed mb-4">适用于奢华度假酒店。我们将科学正念与美学设备植入闲置空间或客房，打造高溢价的"疗愈主题房"与"周末静修营"。</p>
-                    <ul class="text-[10px] text-emerald-400 space-y-1">
-                        <li>• 落地案例：杭州千禧、天目英迪格</li>
-                        <li>• 核心收益：产品溢价及二次体验消费分成</li>
-                    </ul>
-                </div>
-                <!-- Model 2 -->
-                <div class="bg-stone-900 rounded-3xl p-6 border border-stone-800 hover:border-emerald-500/50 transition-all group overflow-hidden">
-                    <div class="h-32 w-full rounded-2xl mb-6 overflow-hidden relative img-overlay">
-                        <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=600&auto=format&fit=crop" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">2. 品牌全面托管运营</h3>
-                    <p class="text-xs text-stone-400 leading-relaxed mb-4">适用于寻求转型的单体星级/康养酒店。KONGWO进行全品牌输出，重构服务SOP，打通餐饮、住宿与疗愈的整体营收壁垒。</p>
-                    <ul class="text-[10px] text-emerald-400 space-y-1">
-                        <li>• 落地案例：绍兴鲁镇雷迪森</li>
-                        <li>• 核心收益：全盘营业流水抽成+管理费</li>
-                    </ul>
-                </div>
-                <!-- Model 3 -->
-                <div class="bg-stone-900 rounded-3xl p-6 border border-stone-800 hover:border-emerald-500/50 transition-all group overflow-hidden">
-                    <div class="h-32 w-full rounded-2xl mb-6 overflow-hidden relative img-overlay">
-                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600&auto=format&fit=crop" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">3. 乡村振兴与产业共建</h3>
-                    <p class="text-xs text-stone-400 leading-relaxed mb-4">破解网红村落“有流量无消费”痛点。引入艺术家驻留IP，共建大地手作工坊与避世疗愈民宿群，实现“留量变现”。</p>
-                    <ul class="text-[10px] text-emerald-400 space-y-1">
-                        <li>• 落地案例：余杭下陡门、庆元大济古村</li>
-                        <li>• 核心收益：业态分成及在地文创零售</li>
-                    </ul>
-                </div>
-                <!-- Model 4 -->
-                <div class="bg-stone-900 rounded-3xl p-6 border border-stone-800 hover:border-emerald-500/50 transition-all group overflow-hidden">
-                    <div class="h-32 w-full rounded-2xl mb-6 overflow-hidden relative img-overlay">
-                        <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=600&auto=format&fit=crop" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">4. 医疗大健康跨界生态</h3>
-                    <p class="text-xs text-stone-400 leading-relaxed mb-4">联合顶尖体检与专科机构，将KONGWO的情绪管理处方纳入医疗高客的检后闭环，提供科学、长线的身心抗衰管理。</p>
-                    <ul class="text-[10px] text-emerald-400 space-y-1">
-                        <li>• 落地案例：爱康悦养 × 悦榕庄</li>
-                        <li>• 核心收益：高净值人群深度定制疗程费</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Interactive Cases Hub -->
-    <section id="cases" class="py-24 bg-[#FBFBF9] border-b border-stone-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-xs font-bold uppercase tracking-widest text-emerald-800">Success Stories</span>
-                <h2 class="serif-title text-3xl sm:text-4xl font-bold text-stone-900 mt-2">KONGWO 疗愈文旅标杆案例库</h2>
-                <p class="mt-4 text-stone-600">重塑空间与内容的价值转化。探索我们如何为全球顶级奢华酒店与文旅生态定制爆款服务群。</p>
-                <div class="mt-6 flex items-center justify-center space-x-6 text-xs text-stone-500">
-                    <span class="flex items-center space-x-1.5">
-                        <span class="w-3 h-3 rounded border-2 border-stone-300 inline-block"></span>
-                        <span>已落地合作案例</span>
+                <div class="hidden md:block">
+                    <span class="text-xs text-emerald-400 font-bold bg-emerald-950/50 border border-emerald-500/30 px-3 py-1 rounded-full flex items-center gap-1">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                        2026年顶层战略级提案
                     </span>
-                    <span class="flex items-center space-x-1.5">
-                        <span class="w-3 h-3 rounded border-2 border-amber-300 bg-amber-50 inline-block"></span>
-                        <span class="inline-flex items-center space-x-1">
-                            <span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"></span>
-                            <span>拟合作战略规划</span>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-8">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15] font-serif-sc">
+                        联合国可持续发展目标(SDGs)<br>
+                        <span class="bg-gradient-to-r from-indigo-400 via-blue-400 to-teal-400 bg-clip-text text-transparent">
+                            国际疗愈文旅示范基地
                         </span>
-                    </span>
+                    </h1>
+                    <p class="text-2xl font-bold text-slate-300 mt-4 font-serif-sc">顶层战略合作与目的地运营提升全案</p>
+                    <p class="text-slate-400 text-lg mt-6 max-w-3xl leading-relaxed">
+                        在精神消费与健康度假刚性爆破的全新时代，KONGWO致力于将文旅资源转化为高溢价的情绪资产。通过构建<span class="text-indigo-300 font-semibold">“B端权威背书托底 + C端情绪价值引爆”</span>的双引擎驱动模式，提供从空间物理改造、产品动线规划、人文服务到年度IP活动的一体化运营托管。
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4 mt-8">
+                        <a href="#roi-calculator" class="bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-500 hover:to-blue-500 text-white px-8 py-3.5 rounded-lg font-bold shadow-lg shadow-indigo-950/40 transition-all text-sm tracking-wider flex items-center gap-2">
+                            资产回报 (ROI) 动态评估系统
+                        </a>
+                        <a href="#cooperation-matrix" class="border border-slate-700 hover:border-slate-500 bg-slate-900/40 text-slate-300 px-8 py-3.5 rounded-lg font-bold hover:bg-slate-900/60 transition-all text-sm tracking-wider">
+                            阅览合作方案
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-4 bg-slate-900/60 border border-slate-800 p-8 rounded-2xl backdrop-blur-md">
+                    <h3 class="text-lg font-bold text-white mb-4 border-b border-slate-800 pb-3 font-serif-sc">顶层核心商业要旨</h3>
+                    <div class="space-y-4 text-sm text-slate-400">
+                        <div class="flex gap-3">
+                            <span class="text-indigo-400 font-bold">1.</span>
+                            <p><strong class="text-slate-200">去玄学与数据实证：</strong> 依托脑神经科学与医疗级数据检测（如BrainCo OxyZen），交付可量化情绪调理方案。</p>
+                        </div>
+                        <div class="flex gap-3">
+                            <span class="text-indigo-400 font-bold">2.</span>
+                            <p><strong class="text-slate-200">三年战略起签：</strong> 为保障基地品牌势能的长效沉淀，全面拒绝短期零散合作。</p>
+                        </div>
+                        <div class="flex gap-3">
+                            <span class="text-indigo-400 font-bold">3.</span>
+                            <p><strong class="text-slate-200">文旅/疗愈双向重构：</strong> 将疗愈全面文旅化（降门槛、强裂变），将文旅全面疗愈化（高溢价、超长粘性）。</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- Cards Grid (Expanded to 7 Cases) -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Case 1 -->
-                <div class="bg-white rounded-3xl border border-stone-200 overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col cursor-pointer group" onclick="openCaseModal(1)">
-                    <div class="h-56 w-full overflow-hidden relative img-overlay">
-                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=600&auto=format&fit=crop" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <span class="absolute top-4 left-4 px-3 py-1 text-[10px] font-bold tracking-widest bg-white/90 text-amber-900 backdrop-blur-sm rounded-full shadow-sm uppercase z-10">亲子与自然</span>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between bg-white z-10 relative -mt-4 rounded-t-3xl">
-                        <div>
-                            <h3 class="serif-title text-xl font-bold text-stone-950 mb-2">杭州千禧度假酒店</h3>
-                            <p class="text-stone-500 text-sm line-clamp-2 mb-4">依托九溪十八涧自然禀赋，打造“自然造物师·亲子疗愈工坊”，重构新中产家庭亲子关系。</p>
+    <!-- Navigation Tabs -->
+    <div class="sticky top-0 z-50 bg-[#0b0f19]/90 backdrop-blur-md border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6">
+            <nav class="flex gap-1 md:gap-4 overflow-x-auto py-4" id="main-nav">
+                <button onclick="switchTab('about')" class="nav-btn px-4 py-2 rounded-lg text-sm font-bold transition-all text-indigo-400 bg-indigo-950/40 border border-indigo-500/30 whitespace-nowrap" data-tab="about">公司及学术实力</button>
+                <button onclick="switchTab('empowerment')" class="nav-btn px-4 py-2 rounded-lg text-sm font-bold transition-all text-slate-400 hover:text-white whitespace-nowrap" data-tab="empowerment">文旅赋能双体系</button>
+                <button onclick="switchTab('products')" class="nav-btn px-4 py-2 rounded-lg text-sm font-bold transition-all text-slate-400 hover:text-white whitespace-nowrap" data-tab="products">B端配套与产品线</button>
+                <button onclick="switchTab('ops')" class="nav-btn px-4 py-2 rounded-lg text-sm font-bold transition-all text-slate-400 hover:text-white whitespace-nowrap" data-tab="ops">运营提升与IP矩阵</button>
+                <button onclick="switchTab('cooperate-center')" class="nav-btn px-4 py-2 rounded-lg text-sm font-bold transition-all text-slate-400 hover:text-white whitespace-nowrap" data-tab="cooperate-center">合作中心(18万)</button>
+                <button onclick="switchTab('matrix')" class="nav-btn px-4 py-2 rounded-lg text-sm font-bold transition-all text-slate-400 hover:text-white whitespace-nowrap" data-tab="matrix">合作版本选择</button>
+                <button onclick="switchTab('cases')" class="nav-btn px-4 py-2 rounded-lg text-sm font-bold transition-all text-slate-400 hover:text-white whitespace-nowrap" data-tab="cases">标杆合作案例</button>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-6 py-12">
+
+        <!-- TAB: About / Company -->
+        <div id="tab-about" class="tab-content block">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-7">
+                    <h2 class="text-3xl font-bold text-white mb-6 font-serif-sc border-l-4 border-indigo-500 pl-4">公司实力与学术支撑</h2>
+                    <p class="text-slate-300 text-lg mb-6">
+                        <strong>KONGWO (空无 / 杭州鹿蜀文化传播有限公司)</strong> 是国内首屈一指的系统化情绪管理运营商。我们彻底打破了传统疗愈依靠“讲故事、卖氛围”的感性天花板，通过引入国际最前沿的临床神经科学和医学量化数据支持，成为国内首个真正具备国际公信力的疗愈品牌。
+                    </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mt-8">
+                        <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-xl hover:border-slate-700 transition">
+                            <div class="text-indigo-400 font-bold text-lg mb-2 flex items-center gap-2">
+                                <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
+                                联合国 SDGS 国际授牌
+                            </div>
+                            <p class="text-sm text-slate-400 leading-relaxed">
+                                联合国相关体系授权会员及学术支持，全系课程和疗愈标准对接全球可持续发展最高康养规范，为文旅合作注入天然的政治与招商信誉。
+                            </p>
                         </div>
-                        <div class="flex items-center justify-between text-xs font-semibold mt-2 pt-4 border-t border-stone-100">
-                            <span class="text-stone-400 font-mono">CASE 01</span>
-                            <span class="text-emerald-800 group-hover:text-emerald-600 transition-colors flex items-center">查看合作详情 <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></span>
+                        <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-xl hover:border-slate-700 transition">
+                            <div class="text-indigo-400 font-bold text-lg mb-2 flex items-center gap-2">
+                                <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
+                                医疗级脑科学数据合作
+                            </div>
+                            <p class="text-sm text-slate-400 leading-relaxed">
+                                联手上海百汇医院、爱康集团，深度嵌入 BrainCo 脑波监测及 OxyZen 数据系统，使每一次疗愈过程都拥有临床级数据看板和量化评估报告。
+                            </p>
+                        </div>
+                        <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-xl hover:border-slate-700 transition">
+                            <div class="text-indigo-400 font-bold text-lg mb-2 flex items-center gap-2">
+                                <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
+                                省级学会发起与行业标准
+                            </div>
+                            <p class="text-sm text-slate-400 leading-relaxed">
+                                浙江省社区研究会“疗愈文化学组”发起单位，致力于将西方现象学、东方导引学以及生态森林浴整合并输出长三角乃至全国的标准教材。
+                            </p>
+                        </div>
+                        <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-xl hover:border-slate-700 transition">
+                            <div class="text-indigo-400 font-bold text-lg mb-2 flex items-center gap-2">
+                                <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
+                                自有版权与导师储备
+                            </div>
+                            <p class="text-sm text-slate-400 leading-relaxed">
+                                拥有完整的艺术疗愈师及颂钵疗愈培训认证考纲体系，独家签约超过30名国内一线心理专家和特级疗愈导师。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-5">
+                    <div class="bg-gradient-to-br from-indigo-950/40 to-slate-900/80 border border-indigo-500/20 p-8 rounded-2xl relative overflow-hidden">
+                        <div class="absolute -top-12 -right-12 w-32 h-32 bg-indigo-500/10 rounded-full blur-xl"></div>
+                        <h3 class="text-xl font-bold text-white mb-6 font-serif-sc flex items-center gap-2 text-indigo-300">
+                            「科学实证」对传统文旅的降维打击
+                        </h3>
+                        <p class="text-sm text-slate-400 mb-6 leading-relaxed">
+                            传统的度假康养体验多以“喝茶、看山、洗温泉”等感性体验为主。KONGWO通过植入标准化的软硬件，帮助目的地酒店和文旅项目实现“五维效果保障”：
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3 bg-slate-950/50 p-3 rounded-lg border border-slate-800">
+                                <span class="px-2 py-0.5 text-xs font-bold bg-indigo-900 text-indigo-300 rounded mt-0.5">身体</span>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-slate-200">中医经络体质测评</h4>
+                                    <p class="text-xs text-slate-500 mt-1">采集客户体温、脉搏等身体表征，生成1对1体质处方膳盘。</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 bg-slate-950/50 p-3 rounded-lg border border-slate-800">
+                                <span class="px-2 py-0.5 text-xs font-bold bg-indigo-900 text-indigo-300 rounded mt-0.5">生理</span>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-slate-200">HRV (心率变异性) 实时监测</h4>
+                                    <p class="text-xs text-slate-500 mt-1">评估自主神经系统压力，数据客观呈现在智能手环与客户端。</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 bg-slate-950/50 p-3 rounded-lg border border-slate-800">
+                                <span class="px-2 py-0.5 text-xs font-bold bg-indigo-900 text-indigo-300 rounded mt-0.5">心智</span>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-slate-200">脑波 (EEG) 数据可视化反馈</h4>
+                                    <p class="text-xs text-slate-500 mt-1">高精准脑电解析，为住客睡前静心和正念打坐出具深度脑力修复评分。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB: Empowerment / Dual System -->
+        <div id="tab-empowerment" class="tab-content hidden">
+            <h2 class="text-3xl font-bold text-white mb-4 font-serif-sc border-l-4 border-indigo-500 pl-4">文旅赋能双体系：重组目的地生命力</h2>
+            <p class="text-slate-400 mb-8 max-w-3xl">我们要帮助文旅目的地不仅改变外观，更要输出一整套将“度假”转化为“生命理想状态”的标准运作体系。</p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- System A -->
+                <div class="bg-slate-900/30 border border-slate-800/80 p-8 rounded-2xl relative">
+                    <span class="absolute top-4 right-4 text-xs font-bold text-indigo-400 tracking-wider bg-indigo-950/60 border border-indigo-500/30 px-3 py-1 rounded">SYSTEM A</span>
+                    <h3 class="text-2xl font-bold text-white mb-4 font-serif-sc text-indigo-300">人文度假生活方式服务体系建设</h3>
+                    <p class="text-sm text-slate-400 mb-6 leading-relaxed">
+                        不仅提供微笑和干净的毛巾，更是对度假住客全周期“情绪波峰”的精心管理。将传统度假酒店的基础服务，升维为充满情绪包裹感的“极愈管家（E-Butler）”式服务。
+                    </p>
+                    <div class="space-y-4">
+                        <div class="border-l-2 border-indigo-500 pl-4 py-1">
+                            <h4 class="text-slate-200 font-semibold text-sm">第一阶段：前置心境诊断与入住情绪契约</h4>
+                            <p class="text-xs text-slate-500 mt-1">在到店前通过小程序完成压力状态自评，客人在前台获赠与其压力属性高度吻合的舒压草本茶与定制香氛枕芯。</p>
+                        </div>
+                        <div class="border-l-2 border-indigo-500 pl-4 py-1">
+                            <h4 class="text-slate-200 font-semibold text-sm">第二阶段：房内五维生态好眠系统</h4>
+                            <p class="text-xs text-slate-500 mt-1">房内提供专有白噪音调谐频率、夜间助眠香薰。客房电视首屏内置30分钟由KONGWO开发的脑波助眠呼吸冥想引导。</p>
+                        </div>
+                        <div class="border-l-2 border-indigo-500 pl-4 py-1">
+                            <h4 class="text-slate-200 font-semibold text-sm">第三阶段：离店情绪总结与离港随身包</h4>
+                            <p class="text-xs text-slate-500 mt-1">离店时，由专属疗愈师奉上一份“情绪微变化分析报告”，并提供一套可在城市工位高频重复使用的“回程正念呼吸香蜡”作为伴手礼。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- System B -->
+                <div class="bg-slate-900/30 border border-slate-800/80 p-8 rounded-2xl relative">
+                    <span class="absolute top-4 right-4 text-xs font-bold text-blue-400 tracking-wider bg-blue-950/60 border border-blue-500/30 px-3 py-1 rounded">SYSTEM B</span>
+                    <h3 class="text-2xl font-bold text-white mb-4 font-serif-sc text-blue-300">度假目的地理想生活共创体系构建</h3>
+                    <p class="text-sm text-slate-400 mb-6 leading-relaxed">
+                        彻底解决景区和度假村“主客对立、缺乏温情”的商业冷漠感，通过共创机制将单纯的“游客”转化为“长期社群共创者”，打造理想的生活乌托邦。
+                    </p>
+                    <div class="space-y-4">
+                        <div class="border-l-2 border-blue-500 pl-4 py-1">
+                            <h4 class="text-slate-200 font-semibold text-sm">「大地艺术家/主理人」驻留共创计划</h4>
+                            <p class="text-xs text-slate-500 mt-1">引入知名冥想导师、独立画手、植物学家、自然手作非遗人，定期开展低成本、高溢价的常驻疗愈工作坊，目的地提供免费住宿，共创社区核心生态。</p>
+                        </div>
+                        <div class="border-l-2 border-blue-500 pl-4 py-1">
+                            <h4 class="text-slate-200 font-semibold text-sm">「理想合伙人」社群特权架构</h4>
+                            <p class="text-xs text-slate-500 mt-1">购买“理想生活年卡”的深度C端住客，拥有景区内特定闲置林地的终身认养权。年卡会员有权在景区策划自己的“家庭私域音乐节”或“静心修学周年庆”。</p>
+                        </div>
+                        <div class="border-l-2 border-blue-500 pl-4 py-1">
+                            <h4 class="text-slate-200 font-semibold text-sm">非遗自然造物工坊建设</h4>
+                            <p class="text-xs text-slate-500 mt-1">联合本地手艺人与村民，共建如植物草本拓印、竹编情绪表达瓶、手工土陶情绪宣泄等业态，既实现乡村振兴，又为游客带来不可替代的在地生命体验。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB: Products / B&C Product Line -->
+        <div id="tab-products" class="tab-content hidden">
+            <h2 class="text-3xl font-bold text-white mb-4 font-serif-sc border-l-4 border-indigo-500 pl-4">B端团队客群体系与全链产品矩阵</h2>
+            <p class="text-slate-400 mb-8 max-w-3xl">我们为目的地度假区配置了分流、蓄水、溢价的模块化C端与B端整合产品体系，拒绝单一依赖民宿房费，大幅扩宽营收口径。</p>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-xl hover:border-slate-700 transition flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-indigo-400 uppercase tracking-wider block mb-2">B端标杆交付 · 高溢价营期</span>
+                        <h3 class="text-xl font-bold text-white mb-3">3天2晚高管深度调节营</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed mb-6">
+                            面向高压行业的企业决策者、银行私行高净值客户（高净值社群）。
+                            <br><br>
+                            <strong>核心配置：</strong> 脑电波引导正念冥想、山水竹林徒步行禅、基于PERMA幸福模型的领导力沙盘重组。
+                            <br><br>
+                            <strong>商业化模型：</strong> 溢价空间巨大，以3天2晚套餐包的形式绑定酒店别墅/高端套房，高客单价高利润率。
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-4 text-xs font-bold text-indigo-300">
+                        建议定价：8,800元 - 16,800元 / 人
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-xl hover:border-slate-700 transition flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-teal-400 uppercase tracking-wider block mb-2">C端周末客流 · 高频爆破</span>
+                        <h3 class="text-xl font-bold text-white mb-3">2天1夜周末数字戒断营</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed mb-6">
+                            专为城市白领及严重遭受“班味”和信息焦虑折磨的中青群体研发。
+                            <br><br>
+                            <strong>核心配置：</strong> “手机锁死、无网生存”24小时、落日五感音疗、静默行禅、森林生态浴、五感安睡疗法。
+                            <br><br>
+                            <strong>商业化模型：</strong> 极度适合周五至周日运营，打破文旅周末房费同质化，将“住宿”卖成“自我情绪救赎门票”。
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-4 text-xs font-bold text-teal-300">
+                        建议定价：1,999元 - 3,999元 / 套餐
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-xl hover:border-slate-700 transition flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-amber-400 uppercase tracking-wider block mb-2">B/C融合 · 行业与IP破圈</span>
+                        <h3 class="text-xl font-bold text-white mb-3">疗愈节/市集/工坊与大赛</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed mb-6">
+                            将目的地打造成区域性的文化流量和专业人才磁石。
+                            <br><br>
+                            <strong>核心配置：</strong> 举办“企业疗愈力与EAP创新挑战赛”，联动海内外大健康学术峰会；举办“疗愈市集”和“自然疗愈音乐会”。
+                            <br><br>
+                            <strong>商业化模型：</strong> 吸引赞助商、带来高额餐饮/手工体验消费。同时作为基地对外的顶级品宣。
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-4 text-xs font-bold text-amber-300">
+                        商业收益：政府补贴申请 + 赞助 + 散客引流
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB: Ops & IP Matrix -->
+        <div id="tab-ops" class="tab-content hidden">
+            <h2 class="text-3xl font-bold text-white mb-4 font-serif-sc border-l-4 border-indigo-500 pl-4">度假目的地整体运营提升与年度IP矩阵</h2>
+            <p class="text-slate-400 mb-8 max-w-3xl">不只是一次性的课程拼盘，我们通过系统化诊断辅导与仪式感IP，赋予基地源源不断的内容输出能力。</p>
+            
+            <div class="grid lg:grid-cols-12 gap-8 mb-12">
+                <div class="lg:col-span-6 bg-slate-900/40 border border-slate-800 p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold text-white mb-4 font-serif-sc flex items-center gap-2 text-indigo-300">
+                        度假目的地整体运营提升策划方案
+                    </h3>
+                    <p class="text-sm text-slate-400 mb-6 leading-relaxed">
+                        通过对景区/酒店现有资产的深度审计与赋能，打破传统运营坪效低下的魔咒：
+                    </p>
+                    <ul class="space-y-4 text-xs text-slate-300">
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-1.5"></span>
+                            <div>
+                                <strong class="text-slate-100">整体空间流线情绪重组：</strong>
+                                <p class="text-slate-500 mt-0.5">专家团实地勘测，将闲置绿地、景观死角、无用会议室，通过声学震频控制和光影改造，设计成符合高客单疗愈体验的“正念静修中心”。</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-1.5"></span>
+                            <div>
+                                <strong class="text-slate-100">人才资源托管与持续造血：</strong>
+                                <p class="text-slate-500 mt-0.5">为目的地团队输出《疗愈服务交付操作指南》，开展岗前全员“情绪关怀话术”实操考评，解除对外请名师的高成本依赖。</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-1.5"></span>
+                            <div>
+                                <strong class="text-slate-100">精准数据监测闭环构建：</strong>
+                                <p class="text-slate-500 mt-0.5">在酒店套房和营期中全套导入PSQI睡眠、HRV自律神经监测等，构建让C端消费者“眼见为实”的情绪改善效果数据库。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="lg:col-span-6 bg-slate-900/40 border border-slate-800 p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold text-white mb-4 font-serif-sc flex items-center gap-2 text-blue-300">
+                        度假目的地年度 IP 活动体系策划方案
+                    </h3>
+                    <p class="text-sm text-slate-400 mb-6 leading-relaxed">
+                        将自然的更迭升维为高粘性的“度假仪式感”，让游客每一季造访都有全新的探索理由：
+                    </p>
+                    <div class="space-y-4 text-xs">
+                        <div class="bg-slate-950/40 p-3 rounded-lg border border-slate-800 flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-slate-200">年度大秀 • 情绪重置盛典</h4>
+                                <p class="text-slate-500 mt-1">联手国内顶尖新媒体艺术家，在目的地举办年度沉浸式音画疗愈大秀。</p>
+                            </div>
+                            <span class="text-[10px] bg-indigo-950/60 text-indigo-400 border border-indigo-500/30 px-2 py-0.5 rounded">行业峰会级</span>
+                        </div>
+                        <div class="bg-slate-950/40 p-3 rounded-lg border border-slate-800 flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-slate-200">项目四季 • 主题疗愈周</h4>
+                                <p class="text-slate-500 mt-1">春分竹林音疗、夏至水系静心、秋分落叶冥想、冬至红炉茶禅。</p>
+                            </div>
+                            <span class="text-[10px] bg-blue-950/60 text-blue-400 border border-blue-500/30 px-2 py-0.5 rounded">季频爆破</span>
+                        </div>
+                        <div class="bg-slate-950/40 p-3 rounded-lg border border-slate-800 flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-slate-200">二十四节气 • 度假仪式感产品</h4>
+                                <p class="text-slate-500 mt-1">每个节气推出专属限时体验（如芒种青梅酒正念、白露松林导引）。</p>
+                            </div>
+                            <span class="text-[10px] bg-teal-950/60 text-teal-400 border border-teal-500/30 px-2 py-0.5 rounded">高频锁客</span>
+                        </div>
+                        <div class="bg-slate-950/40 p-3 rounded-lg border border-slate-800 flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold text-slate-200">项目十二时辰 • 东方正念度日仪式</h4>
+                                <p class="text-slate-500 mt-1">朝迎晨曦、午悟茶禅、夕赏落日、夜观星空，让客人的全天动线在仪式感中流转。</p>
+                            </div>
+                            <span class="text-[10px] bg-amber-950/60 text-amber-400 border border-amber-500/30 px-2 py-0.5 rounded">客房SOP级</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB: Cooperation Center Rights -->
+        <div id="tab-cooperate-center" class="tab-content hidden">
+            <div class="bg-gradient-to-br from-[#101726] to-[#0c111c] border border-slate-800 p-8 rounded-2xl mb-12">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8 border-b border-slate-800 pb-6">
+                    <div>
+                        <h2 class="text-3xl font-bold text-white font-serif-sc">国际疗愈师培训项目合作中心权益</h2>
+                        <p class="text-slate-400 text-sm mt-1">标准化、模块化输出的品牌与人才底座系统</p>
+                    </div>
+                    <div class="bg-indigo-950/60 border border-indigo-500/30 px-6 py-3 rounded-xl text-center">
+                        <span class="text-xs text-indigo-300 block mb-1">2026年官方指导价</span>
+                        <span class="text-2xl font-bold text-indigo-400 font-sans-custom">18 万元 / 年</span>
+                    </div>
+                </div>
+                
+                <p class="text-sm text-slate-400 mb-8 max-w-3xl leading-relaxed">
+                    此权益包为基地的“基础人才造血库”。通过引入联合国最高规格背书与培训考点体系，帮助文旅项目极速建立行业最高水准的资质门槛，同时保障长期稳定的中端客流回拨与考试入场费分成收益。
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Right 1 -->
+                    <div class="bg-slate-950/40 border border-slate-800/80 p-5 rounded-xl hover:border-slate-700 transition">
+                        <span class="text-xs font-bold text-indigo-400 block mb-1">权益 01 - 02</span>
+                        <h4 class="text-slate-200 font-bold text-base mb-2">备考资料与报考补贴</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">
+                            提供 L1 全套备考电子/纸质资料；提供 L1 报考费用补贴（最高600元/人），补贴可直接由合作伙伴支配用于在地的 SDGs 与 ESG 宣传推广。
+                        </p>
+                    </div>
+                    <!-- Right 2 -->
+                    <div class="bg-slate-950/40 border border-slate-800/80 p-5 rounded-xl hover:border-slate-700 transition">
+                        <span class="text-xs font-bold text-indigo-400 block mb-1">权益 03 - 05</span>
+                        <h4 class="text-slate-200 font-bold text-base mb-2">L2专项共建与独家运营权</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">
+                            共同研发并建设一个国际疗愈师 L2 级专项（如：森林水系浴疗、中药导引膳食等），项目方享有该专项的独家运营权，且可作为全国线下该专项考试考点。
+                        </p>
+                    </div>
+                    <!-- Right 3 -->
+                    <div class="bg-slate-950/40 border border-slate-800/80 p-5 rounded-xl hover:border-slate-700 transition">
+                        <span class="text-xs font-bold text-indigo-400 block mb-1">权益 06 - 07</span>
+                        <h4 class="text-slate-200 font-bold text-base mb-2">权威授权牌与宣传大使提名</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">
+                            获颁《合作中心授权牌》，合规合法在宣传中使用 UNITAR CIFAL SHANGHAI / UNIHEAL 标识；拥有 1 名联合国可持续发展疗愈培训项目“宣传大使”提名权。
+                        </p>
+                    </div>
+                    <!-- Right 4 -->
+                    <div class="bg-slate-950/40 border border-slate-800/80 p-5 rounded-xl hover:border-slate-700 transition">
+                        <span class="text-xs font-bold text-indigo-400 block mb-1">权益 08 - 09</span>
+                        <h4 class="text-slate-200 font-bold text-base mb-2">联合峰会活动与官方支持</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">
+                            协助邀请 UNITAR CIFAL SHANGHAI 官方领导与学者出席基地峰会；以联合承办身份，共同发起如《企业疗愈力与 EAP 创新挑战赛》等行业顶级活动。
+                        </p>
+                    </div>
+                    <!-- Right 5 -->
+                    <div class="bg-slate-950/40 border border-slate-800/80 p-5 rounded-xl hover:border-slate-700 transition">
+                        <span class="text-xs font-bold text-indigo-400 block mb-1">权益 10 - 11</span>
+                        <h4 class="text-slate-200 font-bold text-base mb-2">实习实践基地与公益项目共建</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">
+                            共建国际疗愈师实践基地进行专项授牌，导入持证学员长期实习实训；共同举办《HealingSunday 国际疗愈公益项目》，快速建立在地的社会品牌美誉。
+                        </p>
+                    </div>
+                    <!-- Right 6 -->
+                    <div class="bg-slate-950/40 border border-slate-800/80 p-5 rounded-xl hover:border-slate-700 transition">
+                        <span class="text-xs font-bold text-indigo-400 block mb-1">权益 12 - 13</span>
+                        <h4 class="text-slate-200 font-bold text-base mb-2">专家智库共享与日内瓦外事活动</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">
+                            全面共享 UNIHEAL 庞大的企业客户数据库和海外导师智库；基地高管及投资人年度获邀参加在联合国日内瓦总部举办的行业外事专题活动。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB: Cooperation Matrix (78W vs 158W) -->
+        <div id="tab-matrix" class="tab-content hidden">
+            <h2 class="text-3xl font-bold text-white mb-4 font-serif-sc border-l-4 border-indigo-500 pl-4">顶层商业合作层级报价与交付矩阵</h2>
+            <p class="text-slate-400 mb-8 max-w-3xl">为保障品牌势能的长效沉淀和运营成效，以下两大版本均采取<strong>“三年起签”</strong>长期战略绑定机制。在物理空间提升深度、IP定制化程度和顶级渠道对接层面，具备极强的服务区隔与价值断层。</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-stretch" id="cooperation-matrix">
+                <!-- Standard Pack -->
+                <div class="bg-slate-900/30 border border-slate-800 p-8 rounded-2xl flex flex-col justify-between relative hover:border-slate-700 transition duration-300">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <h3 class="text-2xl font-bold text-slate-100 font-serif-sc">【标准版】国际疗愈文旅战略推进方案</h3>
+                                <p class="text-xs text-slate-500 mt-1">单点赋能与轻量级C端引流</p>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <span class="text-3xl font-extrabold text-indigo-400">78 万元</span>
+                            <span class="text-slate-500 text-sm"> / 年 (三年起签)</span>
+                        </div>
+                        
+                        <div class="space-y-4 border-t border-slate-800/80 pt-6">
+                            <div class="flex items-start gap-3">
+                                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>
+                                <p class="text-xs text-slate-400 leading-relaxed"><strong class="text-slate-200">权威挂牌：</strong> 授予基础的国际疗愈师官方考点与实践基地称号，授权基础的品牌使用规范。</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>
+                                <p class="text-xs text-slate-400 leading-relaxed"><strong class="text-slate-200">规划深度（轻度介入）：</strong> 线上规划辅导。梳理1套基础《标准化疗愈客群到店动线》，提供客房睡前静心呼吸SOP电子模板。</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>
+                                <p class="text-xs text-slate-400 leading-relaxed"><strong class="text-slate-200">产品设计：</strong> 植入一套常规下午茶冥想流程和草坪轻冥想体验。</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>
+                                <p class="text-xs text-slate-400 leading-relaxed"><strong class="text-slate-200">专家指导：</strong> 提供年度 2 次线上指导，对目的地基础员工进行情绪疗愈常识通识培训。</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>
+                                <p class="text-xs text-slate-400 leading-relaxed"><strong class="text-slate-200">宣发资源：</strong> 宣传大使提供线上联合宣发，年度统筹 4 篇主流媒体行业通稿发布。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 border-t border-slate-800/80 pt-6">
+                        <button onclick="switchTab('cases')" class="w-full py-3 bg-slate-800/60 hover:bg-slate-800 text-slate-300 rounded-lg text-sm font-bold transition">了解标杆案例</button>
+                    </div>
+                </div>
+
+                <!-- Flagship Pack -->
+                <div class="bg-gradient-to-b from-[#11172a] via-[#101726] to-[#0d121f] border-2 border-indigo-500/40 p-8 rounded-2xl flex flex-col justify-between relative shadow-xl shadow-indigo-950/20 hover:border-indigo-500/60 transition duration-300">
+                    <div class="absolute -top-3 left-6 bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded">极力推荐标杆</div>
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white font-serif-sc">【旗舰版】全球可持续发展标杆文旅方案</h3>
+                                <p class="text-xs text-indigo-400 mt-1">全案重塑规划、五感空间爆改与渠道营收托管</p>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <span class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-teal-300">158 万元</span>
+                            <span class="text-slate-500 text-sm"> / 年 (三年起签)</span>
+                        </div>
+                        
+                        <div class="space-y-4 border-t border-slate-800/80 pt-6">
+                            <div class="flex items-start gap-3">
+                                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>
+                                <p class="text-xs text-slate-400 leading-relaxed"><strong class="text-slate-200">顶级双牌照授权：</strong> 国际直属最高规格背书；高管赴联合国日内瓦总部领奖及交流；共享全套国际机构VI/SI体系。</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>
+                                <p class="text-xs text-slate-400 leading-relaxed"><strong class="text-slate-200">深度空间设计（重度介入）：</strong> 专家团<strong class="text-amber-400">每年不少于 2 次亲临现场</strong>。不仅出具白皮书，更提供物理空间爆改图纸——涵盖声学频率、自然光影及植物五行阵列，将闲置资产打造成顶级静修禅堂。</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>
+                                <p class="text-xs text-slate-400 leading-relaxed"><strong class="text-slate-200">漏斗型C端IP共创：</strong> 以“二十四节气拟人化与生命律动”为核心，由专家团队研发 <strong class="text-indigo-300">1 套专属、排他性目的地商业IP</strong>。交付12个月度情绪活动理疗课表，拥有该IP专属著作权，规避同质化价格内卷。</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>
+                                <p class="text-xs text-slate-400 leading-relaxed"><strong class="text-slate-200">B端渠道营收保障（直接对冲服务费）：</strong> 智库团队优先线下驻场，<strong class="text-indigo-300">年度支持 4 场高毛利企业团建交付</strong>；安排 1 次世界500强企业 EAP 集采对接沙龙，直接把优质客流拉到现场。</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>
+                                <p class="text-xs text-slate-400 leading-relaxed"><strong class="text-slate-200">营销全案与大使站台：</strong> 宣传大使亲临发布会现场剪彩；年度提供不少于 12 篇由专业内容工坊产出的全平台短视频与专题公关深度推广。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 border-t border-slate-800/80 pt-6">
+                        <a href="#roi-calculator" class="w-full block text-center py-3.5 bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-500 hover:to-blue-500 text-white rounded-lg text-sm font-bold transition shadow-md shadow-indigo-950/40">模拟ROI及签约测算</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB: Case Studies -->
+        <div id="tab-cases" class="tab-content hidden">
+            <h2 class="text-3xl font-bold text-white mb-4 font-serif-sc border-l-4 border-indigo-500 pl-4">标杆合作案例：用确定性收益证明模式</h2>
+            <p class="text-slate-400 mb-8 max-w-3xl">KONGWO拒绝空洞理论，我们已经在长三角多个顶流目的地落地下述标杆成果，实现坪效、房费溢价与客户满意度的全面爆破。</p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Case 1 -->
+                <div class="bg-slate-900/40 border border-slate-800 rounded-2xl overflow-hidden group">
+                    <div class="p-6 bg-slate-900/60 border-b border-slate-800 flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-white font-serif-sc">杭州千禧度假酒店 • 服务焕新案</h3>
+                        <span class="text-xs font-bold text-indigo-400 bg-indigo-950/60 border border-indigo-500/30 px-3 py-1 rounded">高奢度假酒店级</span>
+                    </div>
+                    <div class="p-6 text-xs text-slate-400 space-y-4">
+                        <p class="leading-relaxed">
+                            <strong>合作背景：</strong> 传统奢华酒店房费竞争白热化，住客对体验型度假要求增高。
+                            <br><br>
+                            <strong>KONGWO赋能：</strong> 通过空间植入“颂钵与茶道心法五感好眠系统”，共创“房餐+好眠疗愈”高端周末套餐；组织 12 个班次的全员极愈服务SOP培训。
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 border-t border-slate-800 pt-4 text-center">
+                            <div>
+                                <span class="text-lg font-bold text-indigo-400">+ 22%</span>
+                                <p class="text-[10px] text-slate-500 mt-1">周末综合客单均价提升</p>
+                            </div>
+                            <div>
+                                <span class="text-lg font-bold text-indigo-400">98.5%</span>
+                                <p class="text-[10px] text-slate-500 mt-1">住客情绪关怀满意度</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Case 2 -->
-                <div class="bg-white rounded-3xl border border-stone-200 overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col cursor-pointer group" onclick="openCaseModal(2)">
-                    <div class="h-56 w-full overflow-hidden relative img-overlay">
-                        <img src="https://images.unsplash.com/photo-1593814681464-eef5af2b0628?q=80&w=600&auto=format&fit=crop" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <span class="absolute top-4 left-4 px-3 py-1 text-[10px] font-bold tracking-widest bg-white/90 text-emerald-900 backdrop-blur-sm rounded-full shadow-sm uppercase z-10">东方禅修</span>
+                <div class="bg-slate-900/40 border border-slate-800 rounded-2xl overflow-hidden group">
+                    <div class="p-6 bg-slate-900/60 border-b border-slate-800 flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-white font-serif-sc">庆元大济古村落 • 宋韵古村重构案</h3>
+                        <span class="text-xs font-bold text-blue-400 bg-blue-950/60 border border-blue-500/30 px-3 py-1 rounded">乡村振兴·整村重塑</span>
                     </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between bg-white z-10 relative -mt-4 rounded-t-3xl">
-                        <div>
-                            <h3 class="serif-title text-xl font-bold text-stone-950 mb-2">临安天目山英迪格酒店</h3>
-                            <p class="text-stone-500 text-sm line-clamp-2 mb-4">联动1500年古刹禅源寺。首创“数据可视化脑波监测+东方心法”的总裁静修营。</p>
-                        </div>
-                        <div class="flex items-center justify-between text-xs font-semibold mt-2 pt-4 border-t border-stone-100">
-                            <span class="text-stone-400 font-mono">CASE 02</span>
-                            <span class="text-emerald-800 group-hover:text-emerald-600 transition-colors flex items-center">查看合作详情 <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></span>
+                    <div class="p-6 text-xs text-slate-400 space-y-4">
+                        <p class="leading-relaxed">
+                            <strong>合作背景：</strong> 典型宋韵网红村，面临“有打卡没消费、留不住高净值客群”瓶颈。
+                            <br><br>
+                            <strong>KONGWO赋能：</strong> 引入艺术家鲍愔娉长驻共建；搭建大济村“大地艺术疗愈市集”和“非遗植物拓印工坊”；将闲置书屋改造成常态化“观画冥想中心”。
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 border-t border-slate-800 pt-4 text-center">
+                            <div>
+                                <span class="text-lg font-bold text-blue-400">+ 45%</span>
+                                <p class="text-[10px] text-slate-500 mt-1">景区餐饮及手作二消</p>
+                            </div>
+                            <div>
+                                <span class="text-lg font-bold text-blue-400">3.2 天</span>
+                                <p class="text-[10px] text-slate-500 mt-1">中高端客群平均停留天数</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Case 3 -->
-                <div class="bg-white rounded-3xl border border-amber-200 overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col cursor-pointer group relative" onclick="openCaseModal(3)">
-                    <!-- 拟合作角标 -->
-                    <div class="absolute top-4 right-4 z-20 flex items-center space-x-1 px-2.5 py-1 rounded-full bg-amber-400/90 backdrop-blur-sm shadow-sm">
-                        <span class="w-1.5 h-1.5 rounded-full bg-amber-900 animate-pulse"></span>
-                        <span class="text-[10px] font-bold text-amber-950 tracking-wider">拟合作</span>
+                <div class="bg-slate-900/40 border border-slate-800 rounded-2xl overflow-hidden group">
+                    <div class="p-6 bg-slate-900/60 border-b border-slate-800 flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-white font-serif-sc">绍兴鲁镇雷迪森怿曼 • 培训与托管案</h3>
+                        <span class="text-xs font-bold text-teal-400 bg-teal-950/60 border border-teal-500/30 px-3 py-1 rounded">长三角疗愈黄埔军校</span>
                     </div>
-                    <div class="h-56 w-full overflow-hidden relative img-overlay">
-                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=600&auto=format&fit=crop" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <span class="absolute top-4 left-4 px-3 py-1 text-[10px] font-bold tracking-widest bg-white/90 text-blue-900 backdrop-blur-sm rounded-full shadow-sm uppercase z-10">国际联署</span>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between bg-white z-10 relative -mt-4 rounded-t-3xl border-t-2 border-amber-100">
-                        <div>
-                            <h3 class="serif-title text-xl font-bold text-stone-950 mb-2">天目山都喜天丽酒店</h3>
-                            <p class="text-stone-500 text-sm line-clamp-2 mb-4">与英迪格破壁联动。引入都喜源自泰国的顶级养生哲理，并深度嵌入KONGWO东方智慧，开启国际化水疗疗愈。</p>
-                        </div>
-                        <div class="flex items-center justify-between text-xs font-semibold mt-2 pt-4 border-t border-stone-100">
-                            <span class="text-stone-400 font-mono">CASE 03</span>
-                            <span class="text-emerald-800 group-hover:text-emerald-600 transition-colors flex items-center">查看合作详情 <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></span>
+                    <div class="p-6 text-xs text-slate-400 space-y-4">
+                        <p class="leading-relaxed">
+                            <strong>合作背景：</strong> 景区精品文化民宿需要突破同质化竞争，拓展稳定的B端客流。
+                            <br><br>
+                            <strong>KONGWO赋能：</strong> 联合雷迪森品牌成立“颂钵疗愈师培训考点”；结合在地黄酒文化推出“绍兴乌篷船Θ脑波冥想套餐”；打通绍兴本地商会及长三角瑜伽馆社群。
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 border-t border-slate-800 pt-4 text-center">
+                            <div>
+                                <span class="text-lg font-bold text-teal-400">> 100 人</span>
+                                <p class="text-[10px] text-slate-500 mt-1">年度首期孵化持证师资</p>
+                            </div>
+                            <div>
+                                <span class="text-lg font-bold text-teal-400">30% +</span>
+                                <p class="text-[10px] text-slate-500 mt-1">酒店非房疗愈增值服务占比</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Case 4 -->
-                <div class="bg-white rounded-3xl border border-stone-200 overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col cursor-pointer group" onclick="openCaseModal(4)">
-                    <div class="h-56 w-full overflow-hidden relative img-overlay">
-                        <img src="https://images.unsplash.com/photo-1518998053401-b25431b9d0e2?q=80&w=600&auto=format&fit=crop" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <span class="absolute top-4 left-4 px-3 py-1 text-[10px] font-bold tracking-widest bg-white/90 text-rose-900 backdrop-blur-sm rounded-full shadow-sm uppercase z-10">文旅村落规划</span>
+                <div class="bg-slate-900/40 border border-slate-800 rounded-2xl overflow-hidden group">
+                    <div class="p-6 bg-slate-900/60 border-b border-slate-800 flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-white font-serif-sc">大下姜疗愈中心 • 千岛湖生态示范基地</h3>
+                        <span class="text-xs font-bold text-amber-400 bg-amber-950/60 border border-amber-500/30 px-3 py-1 rounded">新农人与大B端集采</span>
                     </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between bg-white z-10 relative -mt-4 rounded-t-3xl">
-                        <div>
-                            <h3 class="serif-title text-xl font-bold text-stone-950 mb-2">庆元大济古村落</h3>
-                            <p class="text-stone-500 text-sm line-clamp-2 mb-4">顶层设计与业态规划，引入鲍愔娉艺术能量画，将宋韵古村重塑为高溢价疗愈宿集。</p>
-                        </div>
-                        <div class="flex items-center justify-between text-xs font-semibold mt-2 pt-4 border-t border-stone-100">
-                            <span class="text-stone-400 font-mono">CASE 04</span>
-                            <span class="text-emerald-800 group-hover:text-emerald-600 transition-colors flex items-center">查看合作详情 <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Case 5 -->
-                <div class="bg-white rounded-3xl border border-stone-200 overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col cursor-pointer group" onclick="openCaseModal(5)">
-                    <div class="h-56 w-full overflow-hidden relative img-overlay">
-                        <img src="https://images.unsplash.com/photo-1551847677-dc82d762e1dc?q=80&w=600&auto=format&fit=crop" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <span class="absolute top-4 left-4 px-3 py-1 text-[10px] font-bold tracking-widest bg-white/90 text-indigo-900 backdrop-blur-sm rounded-full shadow-sm uppercase z-10">全品牌托管</span>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between bg-white z-10 relative -mt-4 rounded-t-3xl">
-                        <div>
-                            <h3 class="serif-title text-xl font-bold text-stone-950 mb-2">绍兴鲁镇雷迪森</h3>
-                            <p class="text-stone-500 text-sm line-clamp-2 mb-4">全面托管运营。定向开拓“一老一小”银发康养与亲子市场，房餐协同收入全面贯通。</p>
-                        </div>
-                        <div class="flex items-center justify-between text-xs font-semibold mt-2 pt-4 border-t border-stone-100">
-                            <span class="text-stone-400 font-mono">CASE 05</span>
-                            <span class="text-emerald-800 group-hover:text-emerald-600 transition-colors flex items-center">查看合作详情 <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Case 6 -->
-                <div class="bg-white rounded-3xl border border-stone-200 overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col cursor-pointer group" onclick="openCaseModal(6)">
-                    <div class="h-56 w-full overflow-hidden relative img-overlay">
-                        <img src="https://images.unsplash.com/photo-1515023115689-589c33041d3c?q=80&w=600&auto=format&fit=crop" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <span class="absolute top-4 left-4 px-3 py-1 text-[10px] font-bold tracking-widest bg-white/90 text-orange-900 backdrop-blur-sm rounded-full shadow-sm uppercase z-10">流量转化生态</span>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between bg-white z-10 relative -mt-4 rounded-t-3xl">
-                        <div>
-                            <h3 class="serif-title text-xl font-bold text-stone-950 mb-2">余杭下陡门村</h3>
-                            <p class="text-stone-500 text-sm line-clamp-2 mb-4">破解网红村“只打卡无消费”痛点。共建大地艺术曼陀罗与手作工坊，实现留量变现。</p>
-                        </div>
-                        <div class="flex items-center justify-between text-xs font-semibold mt-2 pt-4 border-t border-stone-100">
-                            <span class="text-stone-400 font-mono">CASE 06</span>
-                            <span class="text-emerald-800 group-hover:text-emerald-600 transition-colors flex items-center">查看合作详情 <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Case 7 -->
-                <div class="bg-white rounded-3xl border border-stone-200 overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col cursor-pointer group" onclick="openCaseModal(7)">
-                    <div class="h-56 w-full overflow-hidden relative img-overlay">
-                        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=600&auto=format&fit=crop" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <span class="absolute top-4 left-4 px-3 py-1 text-[10px] font-bold tracking-widest bg-white/90 text-cyan-900 backdrop-blur-sm rounded-full shadow-sm uppercase z-10">大健康奢华跨界</span>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between bg-white z-10 relative -mt-4 rounded-t-3xl">
-                        <div>
-                            <h3 class="serif-title text-xl font-bold text-stone-950 mb-2">爱康悦养 × 悦榕庄</h3>
-                            <p class="text-stone-500 text-sm line-clamp-2 mb-4">强强联合打造中国区顶级康养生态。结合精准医学体检数据，定制长线情绪管理处方。</p>
-                        </div>
-                        <div class="flex items-center justify-between text-xs font-semibold mt-2 pt-4 border-t border-stone-100">
-                            <span class="text-stone-400 font-mono">CASE 07</span>
-                            <span class="text-emerald-800 group-hover:text-emerald-600 transition-colors flex items-center">查看合作详情 <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Case 8 (NEW) -->
-                <div class="bg-white rounded-3xl border border-amber-200 overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col cursor-pointer group relative" onclick="openCaseModal(8)">
-                    <!-- 拟合作角标 -->
-                    <div class="absolute top-4 right-4 z-20 flex items-center space-x-1 px-2.5 py-1 rounded-full bg-amber-400/90 backdrop-blur-sm shadow-sm">
-                        <span class="w-1.5 h-1.5 rounded-full bg-amber-900 animate-pulse"></span>
-                        <span class="text-[10px] font-bold text-amber-950 tracking-wider">拟合作</span>
-                    </div>
-                    <div class="h-56 w-full overflow-hidden relative img-overlay">
-                        <img src="https://images.unsplash.com/photo-1505934333218-8fe21ff8cece?q=80&w=600&auto=format&fit=crop" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <span class="absolute top-4 left-4 px-3 py-1 text-[10px] font-bold tracking-widest bg-white/90 text-teal-900 backdrop-blur-sm rounded-full shadow-sm uppercase z-10">乡村振兴生态</span>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between bg-white z-10 relative -mt-4 rounded-t-3xl border-t-2 border-amber-100">
-                        <div>
-                            <h3 class="serif-title text-xl font-bold text-stone-950 mb-2">千岛湖疗愈目的地</h3>
-                            <p class="text-stone-500 text-sm line-clamp-2 mb-4">赋能乡村振兴，打造涵盖湖畔冥想亭与森林疗愈步道的长线旅修生态，探索山水疗愈目的地新范式。</p>
-                        </div>
-                        <div class="flex items-center justify-between text-xs font-semibold mt-2 pt-4 border-t border-stone-100">
-                            <span class="text-stone-400 font-mono">CASE 08</span>
-                            <span class="text-emerald-800 group-hover:text-emerald-600 transition-colors flex items-center">查看合作详情 <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Training & Corporate Services -->
-    <section id="training" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col lg:flex-row gap-16 items-center">
-                <div class="lg:w-1/2">
-                    <span class="text-xs font-bold uppercase tracking-widest text-emerald-800">Corporate Empowerment</span>
-                    <h2 class="serif-title text-3xl sm:text-4xl font-bold text-stone-900 mt-2">企业情绪管理与高管培训体系</h2>
-                    <p class="mt-4 text-stone-600 leading-relaxed mb-8">
-                        除空间运营外，KONGWO 是众多头部金融、科技企业的指定 EAP（员工心理援助）与领导力成长服务商。我们的培训产品可直接打包植入您的酒店会务或团建套餐中，大幅提升 B 端大客户的成单率。
-                    </p>
-                    <div class="space-y-6">
-                        <div class="bg-[#FBFBF9] p-5 rounded-2xl border border-stone-200 shadow-sm flex gap-5 hover:border-emerald-500/30 transition-colors group">
-                            <div class="w-24 h-24 shrink-0 rounded-xl overflow-hidden relative">
-                                <img src="https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=200&auto=format&fit=crop" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="p-6 text-xs text-slate-400 space-y-4">
+                        <p class="leading-relaxed">
+                            <strong>合作背景：</strong> 利用闲置公共空间，盘活在地农林特产，吸引杭州500强企业。
+                            <br><br>
+                            <strong>KONGWO赋能：</strong> 利用下姜双创中心闲置建筑打造森林脑电助眠监测系统；对接大型互联网大厂年度 EAP 大单集采，导入高管减压旅修营。
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 border-t border-slate-800 pt-4 text-center">
+                            <div>
+                                <span class="text-lg font-bold text-amber-400">60% +</span>
+                                <p class="text-[10px] text-slate-500 mt-1">B端大客户年团建预算覆盖</p>
                             </div>
-                            <div class="flex flex-col justify-center">
-                                <h4 class="font-bold text-stone-900 text-sm">SIY 正念领导力课程 (源自Google)</h4>
-                                <p class="text-xs text-stone-500 mt-1.5 leading-relaxed">引入谷歌资深工程师研发的课程，通过“4-7-8呼吸法”、“云朵解离法”，切实降低杏仁核过度反应，提升高管决策力。</p>
+                            <div>
+                                <span class="text-lg font-bold text-amber-400">12 条</span>
+                                <p class="text-[10px] text-slate-500 mt-1">获批新农人与文旅融合补贴</p>
                             </div>
-                        </div>
-                        <div class="bg-[#FBFBF9] p-5 rounded-2xl border border-stone-200 shadow-sm flex gap-5 hover:border-emerald-500/30 transition-colors group">
-                            <div class="w-24 h-24 shrink-0 rounded-xl overflow-hidden relative">
-                                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=200&auto=format&fit=crop" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                            </div>
-                            <div class="flex flex-col justify-center">
-                                <h4 class="font-bold text-stone-900 text-sm">金融科技圈定制 EAP 服务</h4>
-                                <p class="text-xs text-stone-500 mt-1.5 leading-relaxed">服务案例包括杭州银行、中英人寿、科大讯飞。提供“轻量级午休颂钵减压”、“35+岁核心员工情绪树洞”等零负担降压方案。</p>
-                            </div>
-                        </div>
-                        <div class="bg-[#FBFBF9] p-5 rounded-2xl border border-stone-200 shadow-sm flex gap-5 hover:border-emerald-500/30 transition-colors group">
-                            <div class="w-24 h-24 shrink-0 rounded-xl overflow-hidden relative">
-                                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=200&auto=format&fit=crop" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                            </div>
-                            <div class="flex flex-col justify-center">
-                                <h4 class="font-bold text-stone-900 text-sm">Sati 21天身心觉察冥想营</h4>
-                                <p class="text-xs text-stone-500 mt-1.5 leading-relaxed">结合生理神经连结重塑周期，提供“线下工作坊+线上追踪”的混合制培训，扎根东方“致虚守静”文化，确保疗效沉淀。</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:w-1/2">
-                    <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border border-stone-200 relative img-overlay group">
-                        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=800&auto=format&fit=crop" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
-                        <div class="absolute bottom-6 left-6 right-6 z-10">
-                            <h3 class="text-white text-xl font-bold font-serif mb-2 text-shadow-md">重塑组织心理资本</h3>
-                            <p class="text-white/90 text-sm font-medium">帮助企业从“疲劳应付”向“内驱创造”实现指数级跨越。</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Lead Generation Form -->
-    <section id="contact-form" class="py-24 bg-stone-900 text-stone-100 relative overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1576092762791-dd9e2220afa1?q=80&w=1600&auto=format&fit=crop" alt="" class="w-full h-full object-cover opacity-[0.07] mix-blend-overlay">
-        </div>
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    </main>
+
+    <!-- ROI Calculator (Dynamic Interactive Tool) -->
+    <section class="bg-slate-950 border-t border-slate-800 py-16 px-6" id="roi-calculator">
+        <div class="max-w-5xl mx-auto">
             <div class="text-center mb-12">
-                <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-widest bg-emerald-900/50 text-emerald-400 border border-emerald-800/50 mb-4 uppercase">KONGWO Collaboration Channel</span>
-                <h2 class="serif-title text-3xl sm:text-4xl font-bold text-white mb-4">开启您的专属情绪空间赋能方案</h2>
-                <p class="text-stone-400 text-sm max-w-xl mx-auto">提交基础信息，我们的商务及运营总监将在24小时内与您联系，并为您提供**免费的空间诊断报告及初步商业测算（包含投资回报率与客源导入计划）**。</p>
+                <span class="text-xs tracking-widest text-indigo-400 font-bold uppercase border border-indigo-500/30 px-3 py-1 rounded bg-indigo-950/40">KONGWO 运营财务引擎</span>
+                <h2 class="text-3xl font-bold text-white mt-4 font-serif-sc">目的地情绪资产运营 (ROI) 测算系统</h2>
+                <p class="text-slate-400 text-sm mt-2 max-w-xl mx-auto">选择您的基础合作级别并添加特定的业务增值模块，实时预估投入回报率、综合客单价和项目溢价能力。</p>
             </div>
 
-            <form id="collaboration-form" onsubmit="handleFormSubmit(event)" class="bg-stone-800/80 backdrop-blur-md rounded-3xl p-8 sm:p-10 border border-stone-700 shadow-2xl relative overflow-hidden">
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8 relative z-10">
-                    <!-- Project/Company Name -->
-                    <div class="sm:col-span-2">
-                        <label class="block text-xs font-bold text-stone-400 mb-2 uppercase tracking-wider">项目/酒店/企业名称 *</label>
-                        <input type="text" required class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors" placeholder="例如：杭州XX高端度假村 / XX文旅集团">
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+                <!-- Inputs -->
+                <div class="lg:col-span-7 bg-slate-900/40 border border-slate-800 p-8 rounded-2xl">
+                    <h3 class="text-lg font-bold text-white mb-6 font-serif-sc">1. 自定义合作配置与场景参数</h3>
+                    
+                    <!-- Base Version Select -->
+                    <div class="mb-6">
+                        <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">基础合作版型 (三年战略起签)</label>
+                        <div class="grid grid-cols-2 gap-4">
+                            <label class="relative bg-slate-950 border-2 border-indigo-500/20 p-4 rounded-xl cursor-pointer hover:border-indigo-500/40 transition flex flex-col justify-between" id="label-standard">
+                                <input type="radio" name="base_version" value="780000" class="sr-only" checked onchange="calcROI()">
+                                <div>
+                                    <span class="text-sm font-bold text-white block">标准推进版</span>
+                                    <span class="text-xs text-slate-500 block mt-1">线上诊断与轻动线辅导</span>
+                                </div>
+                                <span class="text-indigo-400 font-bold text-base mt-4 block">78 万/年</span>
+                            </label>
+                            <label class="relative bg-slate-950 border-2 border-indigo-500/20 p-4 rounded-xl cursor-pointer hover:border-indigo-500/40 transition flex flex-col justify-between" id="label-flagship">
+                                <input type="radio" name="base_version" value="1580000" class="sr-only" onchange="calcROI()">
+                                <div>
+                                    <span class="text-sm font-bold text-white block">旗舰标杆版</span>
+                                    <span class="text-xs text-slate-500 block mt-1">空间爆改/排他IP与营收托管</span>
+                                </div>
+                                <span class="text-indigo-400 font-bold text-base mt-4 block">158 万/年</span>
+                            </label>
+                        </div>
                     </div>
-                    <!-- Contact Person -->
-                    <div>
-                        <label class="block text-xs font-bold text-stone-400 mb-2 uppercase tracking-wider">联系人姓名及职务 *</label>
-                        <input type="text" required class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors" placeholder="如：张总 (主理人)">
+
+                    <!-- Add-on Modules -->
+                    <div class="mb-6">
+                        <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">可选叠加商业增量包 (多选)</label>
+                        <div class="space-y-3">
+                            <label class="flex items-center justify-between bg-slate-950 p-3.5 rounded-lg border border-slate-800 hover:border-slate-700 cursor-pointer transition">
+                                <div class="flex items-center gap-3">
+                                    <input type="checkbox" id="add-center" value="180000" class="w-4 h-4 text-indigo-600 bg-slate-900 border-slate-700 rounded focus:ring-indigo-500" checked onchange="calcROI()">
+                                    <div>
+                                        <span class="text-xs font-bold text-white block">18万/年 国际疗愈师合作中心权益包</span>
+                                        <span class="text-[10px] text-slate-500">13项核心权益，含L1/L2人才培训与官方考点设立</span>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-bold text-indigo-400">+18万/年</span>
+                            </label>
+                            
+                            <label class="flex items-center justify-between bg-slate-950 p-3.5 rounded-lg border border-slate-800 hover:border-slate-700 cursor-pointer transition">
+                                <div class="flex items-center gap-3">
+                                    <input type="checkbox" id="add-device" value="100000" class="w-4 h-4 text-indigo-600 bg-slate-900 border-slate-700 rounded focus:ring-indigo-500" onchange="calcROI()">
+                                    <div>
+                                        <span class="text-xs font-bold text-white block">脑健康AI助眠智能硬件设备租赁包</span>
+                                        <span class="text-[10px] text-slate-500">BrainCo OxyZen 脑波监测头带10套及配套系统永久授权</span>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-bold text-indigo-400">+10万/年</span>
+                            </label>
+
+                            <label class="flex items-center justify-between bg-slate-950 p-3.5 rounded-lg border border-slate-800 hover:border-slate-700 cursor-pointer transition">
+                                <div class="flex items-center gap-3">
+                                    <input type="checkbox" id="add-ip" value="150000" class="w-4 h-4 text-indigo-600 bg-slate-900 border-slate-700 rounded focus:ring-indigo-500" onchange="calcROI()">
+                                    <div>
+                                        <span class="text-xs font-bold text-white block">二十四节气拟人化IP定制扩容包</span>
+                                        <span class="text-[10px] text-slate-500">专属于本项目的本土中草药/茶道疗愈文创全套设计授权</span>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-bold text-indigo-400">+15万/年</span>
+                            </label>
+                        </div>
                     </div>
-                    <!-- Phone/WeChat -->
+
+                    <!-- Destination Parameters -->
                     <div>
-                        <label class="block text-xs font-bold text-stone-400 mb-2 uppercase tracking-wider">联系电话 / 微信号 *</label>
-                        <input type="text" required class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors" placeholder="11位手机号">
-                    </div>
-                    <!-- Resource Scale (Rooms/Space) -->
-                    <div>
-                        <label class="block text-xs font-bold text-stone-400 mb-2 uppercase tracking-wider">项目体量 (客房数/场地规模)</label>
-                        <select class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors appearance-none">
-                            <option value="">请选择体量范围...</option>
-                            <option value="小型精品 (30间以下)">小型精品民宿/空间 (30间以下)</option>
-                            <option value="中型度假 (30-100间)">中型度假酒店/园区 (30-100间)</option>
-                            <option value="大型综合 (100间以上)">大型综合体/星级酒店 (100间以上)</option>
-                            <option value="纯企服培训 (无自有场地)">纯企服培训引入 (无自有住宿场地)</option>
-                        </select>
-                    </div>
-                    <!-- City -->
-                    <div>
-                        <label class="block text-xs font-bold text-stone-400 mb-2 uppercase tracking-wider">项目所在城市 *</label>
-                        <input type="text" required class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors" placeholder="如：浙江·杭州">
+                        <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">度假目的地当前运营现状基础参数</label>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <span class="text-[10px] text-slate-500 block mb-1">当前平均基础房价 (元/晚)</span>
+                                <input type="number" id="base-adr" value="680" class="w-full bg-slate-950 border border-slate-800 p-2 rounded text-sm text-slate-200 focus:outline-none focus:border-indigo-500" oninput="calcROI()">
+                            </div>
+                            <div>
+                                <span class="text-[10px] text-slate-500 block mb-1">年度可接待B端高星级企业团建场次</span>
+                                <input type="number" id="b2b-events" value="6" class="w-full bg-slate-950 border border-slate-800 p-2 rounded text-sm text-slate-200 focus:outline-none focus:border-indigo-500" oninput="calcROI()">
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="mb-8 border-t border-stone-700 pt-6 relative z-10">
-                    <label class="block text-xs font-bold text-stone-400 mb-4 uppercase tracking-wider">意向合作模式 (可多选)</label>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                        <label class="flex items-start space-x-3 cursor-pointer group">
-                            <div class="flex items-center h-5">
-                                <input type="checkbox" class="w-4 h-4 rounded border-stone-600 text-emerald-600 bg-stone-900 focus:ring-emerald-500 focus:ring-offset-stone-900">
+                <!-- Outputs / Visual Gauges -->
+                <div class="lg:col-span-5 bg-gradient-to-b from-[#101726] to-[#0c111c] border border-slate-800 p-8 rounded-2xl relative">
+                    <h3 class="text-lg font-bold text-white mb-6 font-serif-sc border-b border-slate-800 pb-3">2. 情绪资产重构收益预估</h3>
+                    
+                    <div class="space-y-6">
+                        <!-- Total Cost Display -->
+                        <div>
+                            <span class="text-xs text-slate-500 block">年度全周期合作预算 (服务及权益托管费)</span>
+                            <span class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-blue-400 font-sans-custom" id="total-cost">¥ 960,000</span>
+                        </div>
+
+                        <!-- Expected ADR Upward -->
+                        <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-900">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-xs text-slate-400">预计疗愈房型溢价后 ADR (平均每日房价)</span>
+                                <span class="text-sm font-bold text-emerald-400" id="projected-adr">¥ 952 / 晚</span>
                             </div>
-                            <div class="text-sm">
-                                <span class="font-medium text-stone-300 group-hover:text-white transition-colors">空间赋能与内容植入</span>
-                                <p class="text-[10px] text-stone-500">引入硬件与周末疗愈课程产品包</p>
+                            <div class="w-full bg-slate-900 h-1.5 rounded-full overflow-hidden">
+                                <div class="bg-emerald-400 h-full transition-all duration-500" id="bar-adr" style="width: 40%"></div>
                             </div>
-                        </label>
-                        <label class="flex items-start space-x-3 cursor-pointer group">
-                            <div class="flex items-center h-5">
-                                <input type="checkbox" class="w-4 h-4 rounded border-stone-600 text-emerald-600 bg-stone-900 focus:ring-emerald-500 focus:ring-offset-stone-900">
+                            <p class="text-[10px] text-slate-500 mt-2">※ 房餐疗愈协同化(SOP人文服务重构)预计带来 30% - 50% 的溢价上升空间。</p>
+                        </div>
+
+                        <!-- Expected B2B Revenue -->
+                        <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-900">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-xs text-slate-400">大 B 端企业 EAP 集采团建年增收</span>
+                                <span class="text-sm font-bold text-indigo-400" id="projected-b2b">¥ 540,000 / 年</span>
                             </div>
-                            <div class="text-sm">
-                                <span class="font-medium text-stone-300 group-hover:text-white transition-colors">全盘运营托管</span>
-                                <p class="text-[10px] text-stone-500">酒店品牌重塑及整体营收打通</p>
+                            <div class="w-full bg-slate-900 h-1.5 rounded-full overflow-hidden">
+                                <div class="bg-indigo-400 h-full transition-all duration-500" id="bar-b2b" style="width: 50%"></div>
                             </div>
-                        </label>
-                        <label class="flex items-start space-x-3 cursor-pointer group">
-                            <div class="flex items-center h-5">
-                                <input type="checkbox" class="w-4 h-4 rounded border-stone-600 text-emerald-600 bg-stone-900 focus:ring-emerald-500 focus:ring-offset-stone-900">
+                            <p class="text-[10px] text-slate-500 mt-2">※ 基于 3天2晚 高管深度营，每场团建预计可收取高溢价包房及疗愈交付二消。</p>
+                        </div>
+
+                        <!-- Projected Total ROI Rating -->
+                        <div class="flex items-center gap-4 border-t border-slate-800/80 pt-6">
+                            <div class="p-4 bg-indigo-950/40 rounded-xl border border-indigo-500/20 text-center">
+                                <span class="text-[10px] text-indigo-300 block mb-1">全域粉丝月均增速</span>
+                                <span class="text-lg font-bold text-indigo-400" id="projected-fans">≥ 12%</span>
                             </div>
-                            <div class="text-sm">
-                                <span class="font-medium text-stone-300 group-hover:text-white transition-colors">大健康 / 文旅跨界共建</span>
-                                <p class="text-[10px] text-stone-500">体检中心合作、乡村振兴宿集打造</p>
+                            <div class="flex-1">
+                                <h4 class="text-xs font-bold text-slate-200">目的地“网红留量”综合溢价等级</h4>
+                                <span class="inline-block text-xs font-bold text-amber-400 bg-amber-950/40 border border-amber-500/30 px-3 py-1 rounded mt-2 uppercase tracking-widest" id="projected-level">战略推进标杆级</span>
+                                <p class="text-[10px] text-slate-500 mt-2">通过“理想生活共创”及“二十四节气/十二时辰IP”，复购率预计提升 1.5 倍。</p>
                             </div>
-                        </label>
-                        <label class="flex items-start space-x-3 cursor-pointer group">
-                            <div class="flex items-center h-5">
-                                <input type="checkbox" class="w-4 h-4 rounded border-stone-600 text-emerald-600 bg-stone-900 focus:ring-emerald-500 focus:ring-offset-stone-900">
-                            </div>
-                            <div class="text-sm">
-                                <span class="font-medium text-stone-300 group-hover:text-white transition-colors">企服EAP与高管培训引入</span>
-                                <p class="text-[10px] text-stone-500">SIY正念领导力及员工心理健康服务</p>
-                            </div>
-                        </label>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="text-center relative z-10">
-                    <button type="submit" id="submit-btn" class="w-full sm:w-auto px-10 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-full transition-all shadow-[0_0_20px_rgba(5,150,105,0.4)] hover:shadow-[0_0_30px_rgba(5,150,105,0.6)] flex justify-center items-center mx-auto">
-                        <span id="btn-text">提交合作意向与资料</span>
-                        <svg id="btn-spinner" class="animate-spin ml-2 h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
-                    </button>
-                    <p class="mt-4 text-[10px] text-stone-500">我们严格保护您的商业隐私。点击提交即代表同意KONGWO团队与您联络沟通。</p>
-                </div>
-            </form>
+            <!-- Custom Modal / CTA Toast (No alert() used!) -->
+            <div class="mt-8 text-center">
+                <button onclick="showCTA()" class="inline-flex items-center gap-2 px-10 py-4 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold rounded-xl shadow-lg shadow-emerald-950/40 transition-all transform hover:-translate-y-0.5">
+                    提交并预约 KONGWO 专家路演
+                </button>
+            </div>
         </div>
     </section>
 
-    <!-- Custom Success Modal -->
-    <div id="success-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center px-4">
-        <div class="fixed inset-0 bg-stone-900/80 backdrop-blur-sm transition-opacity" onclick="closeSuccessModal()"></div>
-        <div class="bg-white rounded-3xl p-8 sm:p-12 max-w-md w-full relative z-10 text-center transform scale-95 opacity-0 transition-all duration-300" id="success-modal-content">
-            <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg class="w-10 h-10 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+    <!-- Custom Modal Popup -->
+    <div id="cta-modal" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm hidden">
+        <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl max-w-md mx-4 relative">
+            <h3 class="text-2xl font-bold text-white mb-4 font-serif-sc flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-emerald-400 animate-ping"></span>
+                预约专家路演申请成功
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                KONGWO 情绪管理运营专家组已收到您的资产测算方案。我们将在 24 小时内指派资深疗愈文旅架构师，根据您的目的地实地参数（针对声学、自然光、空间流线及本地 IP），提供一套全流程物理级爆改、人文生活共创以及 158 万全案托管的演示草案。
+            </p>
+            <div class="space-y-3">
+                <div class="bg-slate-950 p-3 rounded-lg border border-slate-800 flex justify-between items-center text-xs">
+                    <span class="text-slate-500">全案年合作托管预估：</span>
+                    <span class="text-indigo-400 font-bold" id="modal-cost">¥ 960,000 / 年</span>
+                </div>
             </div>
-            <h3 class="serif-title text-2xl font-bold text-stone-900 mb-3">合作需求已成功提交</h3>
-            <p class="text-stone-600 text-sm mb-8 leading-relaxed">感谢您对 KONGWO 情绪管理的信任。我们的项目拓展总监将在 <strong class="text-emerald-800">24小时内</strong> 通过您留下的联系方式与您初步沟通，并为您准备定向的评估资料。</p>
-            <button onclick="closeSuccessModal()" class="w-full px-6 py-3 bg-stone-900 text-white rounded-full text-sm font-bold hover:bg-stone-800 transition-colors">
-                好的，了解
+            <button onclick="closeCTA()" class="w-full py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg text-sm font-bold transition mt-6">
+                返回方案详情
             </button>
         </div>
     </div>
 
-    <!-- Case Details Modal -->
-    <div id="case-modal" class="hidden fixed inset-0 z-50 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-            <div onclick="closeCaseModal()" class="fixed inset-0 bg-stone-900/80 backdrop-blur-sm transition-opacity" aria-hidden="true"></div>
-            <div class="inline-block align-bottom bg-[#FBFBF9] rounded-3xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-4xl sm:w-full border border-stone-250">
-                <div id="modal-content" class="relative">
-                    <!-- Dynamic content populated by JS -->
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Footer -->
-    <footer class="bg-stone-950 text-white py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 border-b border-stone-800 pb-12 mb-12">
-                <div class="md:col-span-5">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <svg class="w-8 h-8 text-emerald-500" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M50 15C50 15 32 45 32 60C32 72.15 40.06 82 50 82C59.94 82 68 72.15 68 60C68 45 50 15 50 15Z" fill="currentColor" fill-opacity="0.2"/>
-                            <path d="M50 25C50 25 38 48 38 60C38 67.73 43.37 74 50 74C56.63 74 62 67.73 62 60C62 48 50 25 50 25Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-                        </svg>
-                        <div>
-                            <span class="text-xl font-bold tracking-widest text-white block">KONGWO 空无</span>
-                            <span class="text-[10px] tracking-wider text-stone-400 block -mt-1">SYSTEMATIC HEALING</span>
-                        </div>
-                    </div>
-                    <p class="text-stone-400 text-sm max-w-sm mt-4">
-                        秉承“致虚极，守静笃”理念，融合科学实证与东方智慧。致力于为企业、品牌及高端空间注入系统化的情绪资产价值。
-                    </p>
-                </div>
-                <div class="md:col-span-4">
-                    <h4 class="text-stone-300 font-semibold text-sm uppercase tracking-widest mb-4">核心拓展目标</h4>
-                    <ul class="space-y-2 text-xs text-stone-400">
-                        <li>• 建立高质量空间战略合作（年标：3个以上）</li>
-                        <li>• 孵化核心爆款疗愈课程产品（3-5 个）</li>
-                        <li>• 客户复购率提升至行业平均水平的 1.5 倍</li>
-                        <li>• 完善“医疗·文旅·企服”三大跨界生态</li>
-                    </ul>
-                </div>
-                <div class="md:col-span-3">
-                    <h4 class="text-stone-300 font-semibold text-sm uppercase tracking-widest mb-4">联系项目部</h4>
-                    <p class="text-xs text-stone-400 mb-2">欢迎酒店业主、文旅开发商及政企工会采购负责人垂询。</p>
-                    <span class="text-sm font-bold text-emerald-400 block mt-2">专线：159-9012-7977 (朱总)</span>
-                    <span class="text-xs text-stone-500 block mt-1">杭州祝余医疗科技有限公司 · KONGWO运营</span>
-                </div>
+    <footer class="bg-slate-950 border-t border-slate-900 py-12 px-6 text-center">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-left">
+                <span class="text-sm font-bold text-white block">KONGWO 情绪管理</span>
+                <span class="text-xs text-slate-500 mt-1 block">国内领先的系统化情绪管理运营商 · 浙江省社区研究会疗愈文化学组发起单位</span>
             </div>
-            <div class="flex flex-col sm:flex-row justify-between items-center text-xs text-stone-500">
-                <span>© 2026 KONGWO inc. All Rights Reserved. 联合国 SDGS 认证成员机构。</span>
-                <span class="mt-4 sm:mt-0">Design & Operations by KONGWO BD</span>
-            </div>
+            <p class="text-xs text-slate-600">
+                © 2026 杭州鹿蜀文化传播有限公司. All rights reserved. 授权证书：CIFAL_UNIHEAL_SDGS_2026
+            </p>
         </div>
     </footer>
 
-    <!-- JavaScript Data and Logic -->
+    <!-- Interactive script for switching tabs and calculating ROI -->
     <script>
-        function handleFormSubmit(e) {
-            e.preventDefault();
-            const btnText = document.getElementById('btn-text');
-            const btnSpinner = document.getElementById('btn-spinner');
-            const submitBtn = document.getElementById('submit-btn');
-
-            btnText.innerText = '方案配置中...';
-            btnSpinner.classList.remove('hidden');
-            submitBtn.disabled = true;
-            submitBtn.classList.add('opacity-80', 'cursor-not-allowed');
-
-            setTimeout(() => {
-                btnText.innerText = '提交合作意向与资料';
-                btnSpinner.classList.add('hidden');
-                submitBtn.disabled = false;
-                submitBtn.classList.remove('opacity-80', 'cursor-not-allowed');
-                document.getElementById('collaboration-form').reset();
-
-                const modal = document.getElementById('success-modal');
-                const content = document.getElementById('success-modal-content');
-                modal.classList.remove('hidden');
-                setTimeout(() => {
-                    content.classList.remove('scale-95', 'opacity-0');
-                    content.classList.add('scale-100', 'opacity-100');
-                }, 10);
-                document.body.classList.add('overflow-hidden');
-            }, 1200);
-        }
-
-        function closeSuccessModal() {
-            const modal = document.getElementById('success-modal');
-            const content = document.getElementById('success-modal-content');
+        function switchTab(tabId) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(el => {
+                el.classList.add('hidden');
+                el.classList.remove('block');
+            });
             
-            content.classList.remove('scale-100', 'opacity-100');
-            content.classList.add('scale-95', 'opacity-0');
-            
-            setTimeout(() => {
-                modal.classList.add('hidden');
-                document.body.classList.remove('overflow-hidden');
-            }, 300);
-        }
-
-        // Updated Case Data (Now 7 full cases matching initial prompt and docs)
-        const casesData = {
-            1: {
-                title: "杭州千禧度假酒店",
-                tag: "亲子与自然疗愈",
-                headerImg: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200&auto=format&fit=crop",
-                desc: "针对新一代高净值中产阶级都市家庭。将原本酒店住店客的单一住宿需求，通过KONGWO导入升级为极具情感深度的"亲子关系重构之旅"。",
-                challenge: "亲子房型同质化严重，传统儿童乐园（波波池、滑梯）难以维持父母客户的参与度和高客单价溢价。",
-                solution: "将九溪森林转化为“自然疗愈学堂”。结合 KONGWO “艺术美愈与科学正念”，推出高感官的亲子体验闭环。",
-                programs: [
-                    { name: "自然造物师·亲子疗愈工坊", detail: "带着孩子深入森林捡拾大自然宝藏，溪边引导听雨冥想，亲子协作制作非遗竹筒雨声器。" },
-                    { name: "五感漫步：森林草本拓印", detail: "引导孩子与家长闭眼辨识三种森林白噪音，并在宣纸上手工拓印本草植物，完成情绪解压与创造力提升。" }
-                ],
-                kpi: "首期试点套餐销售率 92%，定向带货 KONGWO 衍生品提升客单 25%。"
-            },
-            2: {
-                title: "天目山英迪格酒店",
-                tag: "禅养正念生活方式",
-                headerImg: "https://images.unsplash.com/photo-1593814681464-eef5af2b0628?q=80&w=1200&auto=format&fit=crop",
-                desc: "联动禅源寺、西天目景区。KONGWO把科学冥想监测与东方的佛学、道学心法进行破壁重构，为英迪格植入“禅意自在 · 冥想归心”核心产品包。",
-                challenge: "高端酒店周末客满、平日空窗，且针对高管圈层缺乏有深刻内涵和复购动力的长线文化产品。",
-                solution: "双核驱动：古刹禅源寺的深厚底蕴 + OxyZen强脑头环的尖端科学。彻底拒绝“玄学”，让精英客群亲眼看见冥想成效。",
-                programs: [
-                    { name: "身心对话：脑波数据反馈正念营", detail: "利用脑波头环科技，让客户亲眼看见自己进入冥想后的α波与θ波活跃度变化，用真实数据强化信任感。" },
-                    { name: "禅源寺行禅与古树能量连接", detail: "清晨参与寺院传统早课，在森林古树群中进行行走冥想，借百年香樟古树场域进行情绪深度落地。" }
-                ],
-                kpi: "单次企业包场活动保底营收超 60,000 元，净推荐值(NPS)高达 72%。"
-            },
-            3: {
-                title: "天目山都喜天丽酒店",
-                tag: "国际疗愈生活方式",
-                headerImg: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop",
-                desc: "实现与同区域英迪格酒店的跨越式联动合作。将都喜天丽品牌自带的顶级泰式养生与 KONGWO 东方本土化"药草膳食与睡眠音疗"深度融合，开启极客营。",
-                challenge: "都喜天丽品牌经典水疗知名度高，但传统服务模式与中国市场的新客群（互联网、创业团队）缺乏深度契合点。",
-                solution: "双酒店梦幻联动。英迪格主打“动、禅”，都喜天丽主打“静、奢”。联合开发3天2晚“国际疗愈总裁研修班”，打造高端圈层生活方式社群。",
-                programs: [
-                    { name: "都喜泰式水疗 + 睡眠冥想音波会", detail: "采用KONGWO五行颂钵结合都喜草本精油芳疗，专为极度失眠、高压力高管定制，通过45分钟音波共振彻底松弛杏仁核过度反应。" },
-                    { name: "都喜中泰植物香药膳食养修", detail: "根据KONGWO情绪地图及HRV数据，为每位客户定制针对肝经、胆经疏通的排毒膳食、草药熏蒸方案。" }
-                ],
-                kpi: "中泰跨界疗愈产品入店率增加 45%，两家酒店之间客源互相导入提升 20% 以上。"
-            },
-            4: {
-                title: "庆元大济古村落",
-                tag: "艺术宿集与文旅重构",
-                headerImg: "https://images.unsplash.com/photo-1518998053401-b25431b9d0e2?q=80&w=1200&auto=format&fit=crop",
-                desc: "针对丽水庆元千年宋韵大济村落进行文旅供给侧重置。KONGWO牵头为全村植入“艺术能量”与“宋代禅修”核心符号，托管艺术疗愈民宿群。",
-                challenge: "古村落虽有历史底蕴但知名度低，无法留存高消费力年轻客群，传统农家乐模式难以建立利润护城河。",
-                solution: "引进“艺术大师在地驻留”。联合能缓解焦虑的知名艺术家鲍愔娉入驻，开发“观画冥想”、“宋代点茶”等高溢价避世体验。",
-                programs: [
-                    { name: "能量画疗愈：观画静心沙龙", detail: "以原创宋代美学能量画作作为媒介。在古宅茶室中戴上耳机进行“观画冥想”，宣泄潜意识压力。" },
-                    { name: "宋韵避世疗愈三天两晚驻留", detail: "包含宋代点茶、手作香囊、古法琴音疗愈，为都市重度焦虑的高净值女性提供避世空间。" }
-                ],
-                kpi: "民宿间夜价实现数倍暴涨（直冲1280元），人均逗留时长从 1.1 天大幅延长至 2.8 天。"
-            },
-            5: {
-                title: "绍兴鲁镇雷迪森",
-                tag: "酒店品牌全面托管",
-                headerImg: "https://images.unsplash.com/photo-1551847677-dc82d762e1dc?q=80&w=1200&auto=format&fit=crop",
-                desc: "全品牌、全托管运营模式。KONGWO与鲁镇雷迪森全面合作，将酒店定位直接转变为“康养疗愈特色人文地标”。",
-                challenge: "周边传统星级酒店泛滥，陷入OTA价格战，同时酒店自身的餐饮和多功能会议空间面临严重闲置浪费。",
-                solution: "定向发力“一老一小”银发和亲子市场，及政企高压培训。将“免费疗愈体验”转化为“定向购买深度团建套餐”，打通房餐全链条。",
-                programs: [
-                    { name: "一老一小：隔代身心八段锦与草木染", detail: "专为银发家庭设计。老人练习八段锦动禅，孩子参与非遗草木染，提供极具温情和文化价值的隔代记忆。" },
-                    { name: "政企团建：SIY正念沟通研修", detail: "为企业HR提供定制化情绪减压培训，输出完整的科学降压ROI数据包，激活闲置会议厅。" }
-                ],
-                kpi: "周末散客溢价套餐销量提升 60%，政企会议非房收入跃升 35%。"
-            },
-            6: {
-                title: "余杭下陡门村",
-                tag: "网红流量变留量",
-                headerImg: "https://images.unsplash.com/photo-1515023115689-589c33041d3c?q=80&w=1200&auto=format&fit=crop",
-                desc: "作为大杭州都市圈网红村。KONGWO以“在大地草木间，找回生命的节奏”为理念，共建具有极高商业附加值的大地艺术疗愈生态群。",
-                challenge: "日间拍照客流量极大，但商业转化极差。网红热度消退风险大，且本地村民无法从流量中直接获益。",
-                solution: "建立“下陡门艺术疗愈农田”与“草木静心工坊”。将自然景观升维为物理冥想场景，植入高客单价手作体验与过夜帐篷旅修。",
-                programs: [
-                    { name: "大地曼陀罗：麦田自然静心会", detail: "利用麦穗、野花和草本拼贴属于自我的大地曼陀罗图案。在纯净的泥土芳香中进行45分钟听风颂钵音疗。" },
-                    { name: "非遗植物手作：草木拓印与植物眼枕", detail: "指导游客收集村里的野生药草，缝制中草药芳香眼枕，将乡村温度作为可售卖手信。" }
-                ],
-                kpi: "下陡门村过夜住宿转化率增加 28%，手作疗愈工坊人均二销达 150 元。"
-            },
-            7: {
-                title: "爱康悦养 × 悦榕庄",
-                headerImg: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop",
-                tag: "医疗数据与奢华静修",
-                desc: "国内最高水准的"精准医学数据 + 奢华品牌疗愈 + 专业运营落地"三方联合。依托悦榕集团顶级养修生态与爱康医学评估，由KONGWO落地长线情绪处方。",
-                challenge: "传统奢华酒店的"SPA养生"容易流于概念化，高管和富裕高客对缺乏临床支持的疗愈难以产生长线复购黏性。",
-                solution: "将疗愈纳入医学处方闭环。先进行大脑及身体健康精准评估，再由KONGWO导师定制声波、正念、膳食干预旅程。",
-                programs: [
-                    { name: "高管睡眠与脑波修复三日私定计划", detail: "根据健康评估结果，KONGWO进行睡眠冥想、芳香疗法及脑电θ波深度修复，结合悦榕庄精油打通微循环。" },
-                    { name: "悦榕养修支柱：HRV实时干预", detail: "在悦榕庄静谧风貌中通过决策呼吸法、云朵思维解离，实时看见高管心理韧性(HRV)的提升。" }
-                ],
-                kpi: "创造国内文旅疗愈客单价纪录(均价3500-8000元/人)，首期高管客群复购率达 45%。"
-            },
-            8: {
-                title: "千岛湖疗愈目的地",
-                headerImg: "https://images.unsplash.com/photo-1505934333218-8fe21ff8cece?q=80&w=1200&auto=format&fit=crop",
-                tag: "乡村振兴 · 拟合作",
-                isPending: true,
-                desc: "千岛湖拥有国内最大的国家级水利风景区，水质达一级，森林覆盖率逾 80%。KONGWO 计划将其打造为中国最具说服力的「山水疗愈目的地」新范式，将流量聚集的湖区资源升维为高溢价的长线旅修生态。",
-                challenge: "千岛湖年均游客超千万，但以一日游散客为主，平均停留不足 1.3 天，过夜深度消费转化极低，高品质康养类产品严重缺位。",
-                solution: "依托山、林、湖三重自然场域，KONGWO 将植入湖畔冥想亭、森林疗愈步道、清晨颂钵日出仪式三大核心打卡场景，并与当地民宿集群共建「旅修套餐」，驱动过夜深度消费。",
-                programs: [
-                    { name: "湖畔清晨冥想仪式：日出颂钵音浴", detail: "在千岛湖最佳观日出点设立颂钵音浴场。清晨 5:30 破晓时分，由 KONGWO 导师引导 40 分钟冥想，以钵音共振替代嘈杂叫醒闹钟，打造全网刷屏的疗愈打卡内容。" },
-                    { name: "森林疗愈漫步：五感觉知与植物精气浴", detail: "KONGWO 设计专属的 2.5 公里森林疗愈步道，融入"听松风"、"触青苔"、"嗅野薄荷"等五感引导任务。结合植物精气（Phytoncide）实证数据，向游客交付可量化的免疫力提升体验报告。" }
-                ],
-                kpi: "（规划中）预计旅修套餐客单价 1800-3200 元/人，过夜留宿转化率目标≥35%，带动湖区合作民宿年均入住率增量 22%+。"
+            // Show target content
+            const target = document.getElementById('tab-' + tabId);
+            if(target) {
+                target.classList.remove('hidden');
+                target.classList.add('block');
             }
-        };
-
-        function openCaseModal(id) {
-            const data = casesData[id];
-            if (!data) return;
-
-            const content = document.getElementById('modal-content');
             
-            const pendingBadge = data.isPending ? `
-                <div class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-amber-400/90 backdrop-blur-sm border border-amber-300/50 mb-3">
-                    <span class="w-1.5 h-1.5 rounded-full bg-amber-900 animate-pulse"></span>
-                    <span class="text-[10px] font-bold text-amber-950 tracking-wider uppercase">战略拟合作 · 规划中</span>
-                </div>` : '';
-
-            content.innerHTML = `
-                <!-- Close Button -->
-                <button onclick="closeCaseModal()" class="absolute top-4 right-4 z-20 w-8 h-8 flex items-center justify-center rounded-full bg-black/40 text-white hover:bg-black/60 backdrop-blur-md transition-all border border-white/20">
-                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-                </button>
-                
-                <!-- Dynamic Header Image -->
-                <div class="w-full h-64 md:h-80 overflow-hidden relative img-overlay">
-                    <img src="${data.headerImg}" alt="" class="w-full h-full object-cover">
-                    <div class="absolute bottom-6 left-6 md:left-10 z-10 text-white">
-                        ${pendingBadge}
-                        ${!data.isPending ? `<span class="inline-block px-3 py-1 rounded-full text-xs font-bold tracking-widest bg-white/20 backdrop-blur-md border border-white/30 mb-3">${data.tag}</span>` : ''}
-                        <h2 class="serif-title text-3xl sm:text-4xl font-bold drop-shadow-lg">${data.title}</h2>
-                    </div>
-                </div>
-
-                <div class="p-6 sm:p-10 bg-[#FBFBF9]">
-                    <p class="text-stone-600 text-sm sm:text-base leading-relaxed mb-8 border-b border-stone-200 pb-8">${data.desc}</p>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="text-xs font-bold uppercase tracking-widest text-red-800 flex items-center mb-2">
-                                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full mr-2"></span> 合作前：行业痛点与挑战
-                                </h4>
-                                <p class="text-xs text-stone-600 leading-relaxed bg-red-50/50 p-4 rounded-xl border border-red-100">${data.challenge}</p>
-                            </div>
-                            <div>
-                                <h4 class="text-xs font-bold uppercase tracking-widest text-emerald-800 flex items-center mb-2">
-                                    <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-2"></span> KONGWO "重塑"方案
-                                </h4>
-                                <p class="text-xs text-stone-600 leading-relaxed bg-emerald-50/50 p-4 rounded-xl border border-emerald-100">${data.solution}</p>
-                            </div>
-                            <div class="${data.isPending ? 'bg-amber-50 border-amber-200' : 'bg-stone-100 border-stone-200'} p-4 rounded-xl border shadow-inner">
-                                <span class="text-[10px] uppercase tracking-widest text-stone-500 font-bold block mb-1">${data.isPending ? '预期目标 (规划中)' : '关键交付结果 (KPI)'}</span>
-                                <p class="text-xs font-bold ${data.isPending ? 'text-amber-900' : 'text-emerald-900'}">${data.kpi}</p>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h4 class="text-xs font-bold uppercase tracking-widest text-stone-500 mb-4">${data.isPending ? '规划核心疗愈场景' : '核心疗愈课程/产品植入'}</h4>
-                            <div class="space-y-4">
-                                ${data.programs.map((prog, index) => `
-                                    <div class="p-4 bg-white border border-stone-200 rounded-xl shadow-sm hover:shadow-md hover:border-emerald-500/50 transition-all">
-                                        <span class="text-[10px] text-emerald-700 font-bold font-mono bg-emerald-50 px-2 py-0.5 rounded border border-emerald-100">ITEM 0${index+1}</span>
-                                        <h5 class="font-bold text-stone-900 text-sm mt-2 mb-1">${prog.name}</h5>
-                                        <p class="text-xs text-stone-500 leading-relaxed">${prog.detail}</p>
-                                    </div>
-                                `).join('')}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `;
-
-            const modal = document.getElementById('case-modal');
-            modal.classList.remove('hidden');
-            document.body.classList.add('overflow-hidden');
+            // Update nav button styles
+            document.querySelectorAll('#main-nav button').forEach(btn => {
+                if (btn.getAttribute('data-tab') === tabId) {
+                    btn.classList.add('text-indigo-400', 'bg-indigo-950/40', 'border-indigo-500/30');
+                    btn.classList.remove('text-slate-400', 'hover:text-white');
+                } else {
+                    btn.classList.remove('text-indigo-400', 'bg-indigo-950/40', 'border-indigo-500/30');
+                    btn.classList.add('text-slate-400', 'hover:text-white');
+                }
+            });
         }
 
-        function closeCaseModal() {
-            const modal = document.getElementById('case-modal');
-            modal.classList.add('hidden');
-            document.body.classList.remove('overflow-hidden');
+        function calcROI() {
+            // Base price
+            let baseVal = parseInt(document.querySelector('input[name="base_version"]:checked').value);
+            
+            // Selected add-ons
+            let centerVal = document.getElementById('add-center').checked ? parseInt(document.getElementById('add-center').value) : 0;
+            let deviceVal = document.getElementById('add-device').checked ? parseInt(document.getElementById('add-device').value) : 0;
+            let ipVal = document.getElementById('add-ip').checked ? parseInt(document.getElementById('add-ip').value) : 0;
+            
+            // Total cost calculation
+            let totalCost = baseVal + centerVal + deviceVal + ipVal;
+            document.getElementById('total-cost').innerText = '¥ ' + totalCost.toLocaleString();
+            document.getElementById('modal-cost').innerText = '¥ ' + totalCost.toLocaleString() + ' / 年';
+
+            // Base ADR input
+            let baseAdr = parseFloat(document.getElementById('base-adr').value) || 680;
+            let b2bEvents = parseInt(document.getElementById('b2b-events').value) || 6;
+
+            // ADR Uplift projection
+            // Flagship version yields 40% upgrade, standard yields 20%
+            let upliftPercent = (baseVal === 1580000) ? 0.40 : 0.20;
+            if (deviceVal > 0) upliftPercent += 0.10; // extra hardware bonus
+            let projectedAdr = baseAdr * (1 + upliftPercent);
+            document.getElementById('projected-adr').innerText = '¥ ' + Math.round(projectedAdr) + ' / 晚';
+            document.getElementById('bar-adr').style.width = Math.min((upliftPercent * 200), 100) + '%';
+
+            // B2B projected revenue
+            // Standard provides baseline, flagship provides extra premium corporate events and 500EAP connection
+            let avgTicketPrice = (baseVal === 1580000) ? 25000 : 15000; 
+            let projectedB2BRevenue = b2bEvents * avgTicketPrice * 4; // average 4 companies per scale
+            document.getElementById('projected-b2b').innerText = '¥ ' + projectedB2BRevenue.toLocaleString() + ' / 年';
+            document.getElementById('bar-b2b').style.width = Math.min((projectedB2BRevenue / 2000000) * 100, 100) + '%';
+
+            // Level & Fan updates
+            let totalAddons = (centerVal > 0 ? 1 : 0) + (deviceVal > 0 ? 1 : 0) + (ipVal > 0 ? 1 : 0);
+            if (baseVal === 1580000 && totalAddons >= 2) {
+                document.getElementById('projected-level').innerText = '全球可持续发展标杆级';
+                document.getElementById('projected-level').className = 'inline-block text-xs font-bold text-amber-400 bg-amber-950/40 border border-amber-500/30 px-3 py-1 rounded mt-2 uppercase tracking-widest';
+                document.getElementById('projected-fans').innerText = '≥ 15%';
+            } else if (baseVal === 1580000) {
+                document.getElementById('projected-level').innerText = '区域旗舰示范基地级';
+                document.getElementById('projected-level').className = 'inline-block text-xs font-bold text-indigo-400 bg-indigo-950/40 border border-indigo-500/30 px-3 py-1 rounded mt-2 uppercase tracking-widest';
+                document.getElementById('projected-fans').innerText = '≥ 12%';
+            } else {
+                document.getElementById('projected-level').innerText = '常规战略推进级';
+                document.getElementById('projected-level').className = 'inline-block text-xs font-bold text-slate-400 bg-slate-950 border border-slate-800 px-3 py-1 rounded mt-2 uppercase tracking-widest';
+                document.getElementById('projected-fans').innerText = '≥ 8%';
+            }
+
+            // Highlighting active radio buttons
+            if (baseVal === 780000) {
+                document.getElementById('label-standard').classList.add('border-indigo-500', 'bg-indigo-950/10');
+                document.getElementById('label-flagship').classList.remove('border-indigo-500', 'bg-indigo-950/10');
+            } else {
+                document.getElementById('label-flagship').classList.add('border-indigo-500', 'bg-indigo-950/10');
+                document.getElementById('label-standard').classList.remove('border-indigo-500', 'bg-indigo-950/10');
+            }
+        }
+
+        function showCTA() {
+            document.getElementById('cta-modal').classList.remove('hidden');
+        }
+
+        function closeCTA() {
+            document.getElementById('cta-modal').classList.add('hidden');
+        }
+
+        // Initialize calculations
+        window.onload = function() {
+            calcROI();
         }
     </script>
 </body>
